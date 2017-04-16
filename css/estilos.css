@@ -47,7 +47,7 @@ header nav a:hover{
 	color:#fff;
 }
 
-main section {
+section {
     width: 79%;
     background: #ccc;
     float: left;
@@ -55,8 +55,7 @@ main section {
     padding-bottom: 60px;
     padding-top:30px;
 }
-
-main aside {
+ aside {
     float: left;
     border: 1px solid red;
     width: 19%;
