@@ -13,7 +13,7 @@ body{
 header{
 	/*Adaptative Apps (%) 90%pantalla*/
 	width: 90%;
-	background: #FFF2C4;
+	background: #9C9A40;
 	/*Centrar 0-> arriba auto->izq/der
 	padding del margen hacia el centro
 	*/
@@ -60,18 +60,17 @@ section {
     border: 1px solid red;
     width: 19%;
     border: 1px solid red;
-    /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
-    /*visibility: hidden;*/
+  	visibility: hidden;
 }
 
 
 footer {
-    position: absolute;
+    position: relative;
     margin-top: -50px;
     height: 40px; 
     padding:5px 0px;
     clear: both;
-    background: #286af0;
+    background: #DA413D
     text-align: center;
-    color:  #d9d9d9;
+    color:  #FFFFFF;
 }
