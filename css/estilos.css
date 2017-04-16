@@ -1,0 +1,48 @@
+*{
+	padding: 0;
+	margin: 0;
+	/*
+	Encerar la pagina
+	*/
+}
+body{
+	background: #ECEDEE;
+	/*Establecer tipo de fuente body*/
+	font-family: arial;
+}
+header{
+	/*Adaptative Apps (%) 90%pantalla*/
+	width: 90%;
+	background: #FFF2C4;
+	/*Centrar 0-> arriba auto->izq/der
+	padding del margen hacia el centro
+	*/
+	margin: 0 auto;
+}
+/*Establecer tamaño en pantalla de h1 y nav*/
+header h1{
+	width: 25%;
+	padding: 0.6em 0.5em;
+	color: #433505;
+	text-shadow: 2px 2px 3px #333;
+}
+header nav{
+	width: 70%;
+	text-align: right;
+}
+/*Se aplica estio a header h1 y  header nav*/
+header h1, header nav{
+	/*una sola linea de bloque */
+	display: inline-block;
+}
+header nav a{
+	text-decoration:none;
+	padding: 0.3em 0.7em;
+	color: #094354;
+	font-weight: bold;
+
+}
+header nav a:hover{
+	background: #094354;
+	color:#fff;
+}
