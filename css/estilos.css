@@ -68,10 +68,11 @@ footer {
     margin-top: -50px;
     height: 40px; 
     padding:5px 0px;
+    clear: both;
     background: #DA413D;
     text-align: center;
     color:  #FFFFFF;
- 	position:absolute;
+ 	position:relative;
   	bottom:0;
   	width:100%;  
 }
