@@ -47,14 +47,29 @@ header nav a:hover{
 	color:#fff;
 }
 
+main section {
+    width: 79%;
+    background: #ccc;
+    float: left;
+    overflow: auto;
+    padding-bottom: 60px;
+    padding-top:30px;
+}
+
+main aside {
+    float: left;
+    border: 1px solid red;
+    width: 19%;
+    border: 1px solid red;
+    /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+    /*visibility: hidden;*/
+}
 
 
 footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+	background:#ffab62;
+	width:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
 }
