@@ -65,12 +65,12 @@ section {
 
 
 footer {
-    position: relative;
+    position: absolute;
     margin-top: -50px;
     height: 40px; 
     padding:5px 0px;
     clear: both;
-    background: #DA413D
+    background: #DA413D;
     text-align: center;
     color:  #FFFFFF;
 }
