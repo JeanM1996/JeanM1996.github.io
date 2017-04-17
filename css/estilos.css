@@ -64,11 +64,9 @@ section {
 
 
 footer {
-      background: #DA413D;
-	  height: 50px; 
-	  text-align: center;
-	  width:100%; 
-	  position:absolute; 
-	  bottom:; 
-	  left:; 
+       background: #DA413D;
+	   position: relative;
+	   margin-top: -50px; /* Misma altura que el footer en negativo */
+	   height: 50px; /* Altura del footer */
+	   clear: both;
 }
