@@ -65,6 +65,7 @@ section {
 
 footer {
        background: #DA413D;
+       margin: 0 auto;
 	   position: relative;
 	   margin-top: -50px; /* Misma altura que el footer en negativo */
 	   height: 50px; /* Altura del footer */
