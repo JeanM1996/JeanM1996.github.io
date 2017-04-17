@@ -67,6 +67,7 @@ section {
 footer {
        		background: #DA413D;
  			width: 90%;
+ 			margin: 0 auto;
 			height: 50px;
 			text-align: center;
 			font-size: 15;
