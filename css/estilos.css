@@ -1,4 +1,4 @@
-*{
+﻿*{
 	padding: 0;
 	margin: 0;
 	/*
@@ -6,7 +6,7 @@
 	*/
 }
 body{
-	background: #ECEDEE;
+	background: #FFFFFF;
 	/*Establecer tipo de fuente body*/
 	font-family: arial;
 }
