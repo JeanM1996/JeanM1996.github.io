@@ -7,6 +7,7 @@ body{
 }
 header{
 	margin: 0 auto;
+	resize:inherit;
 	padding: 1em 0.5em 0.5em 0.5em;
 	align-content: center;
 	width: 89%;
@@ -118,10 +119,14 @@ section{
 	background:#EBEBEB ;
 }
 
-section.newsletter{
-	 background-image: url("../images/banner.png");
+.newsletter{
+    background-image: url("../images/comida.jpg");
 	background: #cccccc;
 	padding: 2em auto;
+}
+.formulario{
+		background-image: url("../images/comida.jpg")  ;
+
 }
 
 .compra{
