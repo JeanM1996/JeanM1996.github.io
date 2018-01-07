@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Datos</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"/>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+ 	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.15/datatables.min.js"></script>
+ 	<script type="text/javascript">
+ 	
+			$(document).ready(function() {
+			    $('#example').DataTable( {
+			        "ajax": "../javascript/registros.txt",
+			        "columns": [
+			            { "data": "Tipologia" },
+			            { "data": "Zona" },
+			            { "data": "Provincia" },
+			            { "data":"Canton"},
+			            { "data": "Fecha" },
+			            { "data":"Hora Infraccion"},
+			            { "data": "Sexo" },
+			            { "data":"Nacionalidad"},
+			            { "data": "Edad" }
+			        ]
+			    } );
+			} );
+			/**
+			$(document).ready(function() {
+				$.getJSON("../javascript/registros.json",function(data){
+					var delito='';
+					$.each(data,function(id,value){
+						delito+='<tr>';
+						delito+='<td>'+value.Tipologia+'</td>';
+						delito+='<td>'+value.Zona+'</td>';
+						delito+='<td>'+value.Provincia+'</td>';
+						delito+='<td>'+value.Canton+'</td>';
+						delito+='<td>'+value.Fecha+'</td>';
+						delito+='<td>'+value.Hora+'</td>';
+						delito+='<td>'+value.Sexo+'</td>';		
+						delito+='<td>'+value.Genero+'</td>';	
+						delito+='<td>'+value.Nacionalidad+'</td>';	
+						delito+='</tr>';		
+					});
+					$('#example').append(delito);
+				});
+			});
+			*/
+ 	</script>
+</head>
+<body>
+<header>
+		<img src="../images/utpl.png"  class="logo" >
+		<section class="info2">
+			<h3 class="info">Universidad Tecnica Particular de Loja</h4>
+			<br>
+			<h4 class="info">Formacion en Academia GP 1.3 </h3>
+			<br>
+			<h5 class="info">Proyecto Final del Componente</h5>
+			<br>
+			<h6 class="info" i>DATOS</h6>			
+		</section>
+			<nav class="menu">
+				   <a href="../index.html">Inicio</a>
+				   <a href="datos.html">Datos</a>
+				   <a href="estadisticas.html">Estadisticas</a>
+				   <a href="mapa.html">Geolocalizacion de Eventos</a>
+			</nav>
+</header>
+<main>
+<h1>Asesinatos y Homicidios Sucitados en el Ecuador durante el año 2014</h1>
+<h2>Fuente: Ministerio del Interior</h2>
+<table id="example" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Zona</th>
+                <th>Provincia</th>
+                <th>Canton</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Sexo</th>
+                <th>Nacionalidad</th>
+                <th>Genero</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Tipo</th>
+                <th>Zona</th>
+                <th>Provincia</th>
+                <th>Canton</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Sexo</th>
+                <th>Nacionalidad</th>
+                <th>Edad</th>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+</main>
+  <footer>
+        <section class="informacion">
+        <h3 class="name">Acerca De</h3>
+        <br>
+        <p>Desarrollo de Pagina referente al dataset </p>
+        <p>de asesinatos y homicidios suscitados en el </p>
+        <p>Ecuador en el año 2014</p>
+      </section>
+
+      <section class="enlaces">
+        <h3 class="name">Enlaces de Interes</h3>
+        <ul>
+                    <li><a href="http://www.datosabiertos.ec/">DATOS ABIERTOS ECUADOR<a/></li> 
+                    <li><a href="https://www.w3schools.com/">W3C<a/></li> 
+                    <li><a href="http://www.ecuadorencifras.gob.ec/institucional/home/">INEC<a/></li> 
+                    <li><a href="http://www.policiaecuador.gob.ec/">POLICIA NACIONAL<a/></li> 
+        </ul>
+      </section>
+      <section class="acercade">
+        <h3 class="name">Desarrollado por</h3>
+        <br>
+        <p>Jean Paul Mosquera Arevalo</p>
+        <p>Sistemas Informaticos y Computación</p>
+        <p>Loja, Ecuador</p>
+        <p><a class="twitter" href="http://www.twitter.com/JeanMosquera">@JeanMosquera<a/></p>
+      </section>
+      <a href="http://www.utpl.edu.ec">  <img  class="img1" src="../images/utpl1.png"></a>
+      <h6 class="derechos">TODOS LOS DERECHOS RESERVADOS </h6>
+      <h6 class="derechos">2017 </h6>
+  </footer>
+</body>
+</html>

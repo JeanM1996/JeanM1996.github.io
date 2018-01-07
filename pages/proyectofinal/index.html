@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lectura Archivo Json</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="https://code.highcharts.com/maps/highmaps.js"></script>
+	<script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+	<script src="https://code.highcharts.com/mapdata/countries/ec/ec-all.js"></script>
+	<script language="Javascript" type="text/javascript" src="javascript/script.js"></script>
+	
+</head>
+<body>
+<header>
+		<img href="http://www.utpl.edu.ec" src="images/utpl.png"  class="logo" >
+		<section class="info2">
+			<h3 class="info">Universidad Tecnica Particular de Loja</h4>
+			<br>
+			<h4 class="info">Formacion en Academia GP 1.3 </h3>
+			<br>
+			<h5 class="info">Proyecto Final del Componente</h5>
+			<br>
+		</section>
+			<nav class="menu">
+				   <a href="index.html">Inicio</a>
+				   <a href="internas/datos.html">Datos</a>
+				   <a href="internas/estadisticas.html">Estadisticas</a>
+				   <a href="internas/mapa.html">Geolocalizacion de Eventos</a>
+			</nav>
+</header>
+
+<section class="banner">
+<section class="w3-content w3-display-container" style="max-width:90%">
+<section class="mySlides">
+  <img src="http://chabaneixabogadospenalistas.es/wp-content/uploads/2015/05/Delito-de-homicidio-y-asesinato-1200x300.jpg" style="width:100%">
+  <section class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    La tasa de Homicidios y Asesinatos en el 2009 fue de 18.74 casos por cada 100.000 habitantes
+    <br>
+      <p class="fuente">MINISTERIO DEL INTERIOR ECUADOR</p>
+  </section>
+
+</section>
+<section class="mySlides">
+  <img src="http://chabaneixabogadospenalistas.es/wp-content/uploads/2015/05/Delito-de-Lesiones-1200x300-1.jpg" style="width:100%">
+  <section class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    La tasa de Homicidios y Asesinatos en el 2014 fue de 8.13 casos por cada 100.000 habitantes
+      <p class="fuente">MINISTERIO DEL INTERIOR ECUADOR</p>
+  </section>
+</section>
+
+<section class=" mySlides">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOJEgx3r4gOdVZ4bQkYfe3ghAY1XeWxNAdzDxjBBeCj9MqqyFM" style="width:100%">
+  <section class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    La tasa de Homicidios y Asesinatos en el 2015 fue de 6.4 casos por cada 100.000 habitantes
+        <br>
+      <h6 class="fuente">MINISTERIO DEL INTERIOR ECUADOR</p>
+  </section>
+</section>
+
+<section class=" mySlides">
+  <img src="http://assets.nydailynews.com/polopoly_fs/1.2731061.1469805672!/img/httpImage/image.jpg_gen/derivatives/article_1200/brutality-banner.jpg" style="width:100%">
+  <section class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Los tipos de delitos  asociados son : Homicidios, Asesinatos, Femicidios
+        <br>
+      <p class="fuente">MINISTERIO DEL INTERIOR ECUADOR</p>
+  </section>
+</section>
+
+<section class=" mySlides">
+  <img src="http://www.hatenough.com/images/details/29-110-pexels-photo-132752.jpeg" style="width:100%">
+  <section class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    La Dinased  se encarga de investigar, en conjunto con la fiscalia estos delitos contra la vida
+        <br>
+      <p class="fuente">MINISTERIO DEL INTERIOR ECUADOR</p>
+  </section>
+</section>
+  <section class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+	<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+    <span class=" demo   " onclick="currentDiv(1)"></span>
+    <span class=" demo  " onclick="currentDiv(2)"></span>
+    <span class=" demo   " onclick="currentDiv(3)"></span>
+      <span class=" demo  " onclick="currentDiv(4)"></span>
+  </section>
+</section>
+<main>
+<br>
+<br>
+<br>
+<section id="container"></section>
+<br>
+</main>
+  <footer>
+        <section class="informacion">
+        <h3 class="name">Acerca De</h3>
+        <br>
+        <p>Desarrollo de Pagina referente al dataset </p>
+        <p>de asesinatos y homicidios suscitados en el </p>
+        <p>Ecuador en el año 2014</p>
+      </section>
+
+      <section class="enlaces">
+        <h3 class="name">Enlaces de Interes</h3>
+        <ul>
+                    <li><a href="http://www.datosabiertos.ec/">DATOS ABIERTOS ECUADOR<a/></li> 
+                    <li><a href="https://www.w3schools.com/">W3C<a/></li> 
+                    <li><a href="http://www.ecuadorencifras.gob.ec/institucional/home/">INEC<a/></li> 
+                    <li><a href="http://www.policiaecuador.gob.ec/">POLICIA NACIONAL<a/></li> 
+        </ul>
+      </section>
+      <section class="acercade">
+        <h3 class="name">Desarrollado por</h3>
+        <br>
+        <p>Jean Paul Mosquera Arevalo</p>
+        <p>Sistemas Informaticos y Computación</p>
+        <p>Loja, Ecuador</p>
+        <p><a class="twitter" href="http://www.twitter.com/JeanMosquera">@JeanMosquera<a/></p>
+      </section>
+      <a href="http://www.utpl.edu.ec">  <img  class="img1" src="images/utpl1.png"></a>
+      <h6 class="derechos">TODOS LOS DERECHOS RESERVADOS </h6>
+      <h6 class="derechos">2017 </h6>
+  </footer>
+  </body>
+<script>
+var slideIndex = 1;
+showsections(slideIndex);
+carousel();
+function plussections(n) {
+  showsections(slideIndex += n);
+}
+
+function currentsection(n) {
+  showsections(slideIndex = n);
+}
+
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
+
+</script>
+</html>
