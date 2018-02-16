@@ -1,0 +1,885 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -69.2878,-23.8369 ]
+    },
+    "properties": {
+    "caso":"KW2016ch5",
+    "idcomuna":2101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -69.2878,-23.8369 ]
+    },
+    "properties": {
+    "caso":"LC2017ch13",
+    "idcomuna":2101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -69.2878,-23.8369 ]
+    },
+    "properties": {
+    "caso":"BT2016ch25",
+    "idcomuna":2201
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -69.2878,-23.8369 ]
+    },
+    "properties": {
+    "caso":"MB2016ch43",
+    "idcomuna":2201
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.8120,-30.5402 ]
+    },
+    "properties": {
+    "caso":"FR2017ch26",
+    "idcomuna":4101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.8120,-30.5402 ]
+    },
+    "properties": {
+    "caso":"AC2017ch19",
+    "idcomuna":4102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.8120,-30.5402 ]
+    },
+    "properties": {
+    "caso":"AA2017ch31",
+    "idcomuna":4201
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-32.5040 ]
+    },
+    "properties": {
+    "caso":"VZ2017ch36",
+    "idcomuna":5109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-32.5040 ]
+    },
+    "properties": {
+    "caso":"NA2016ch13",
+    "idcomuna":5303
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-32.5040 ]
+    },
+    "properties": {
+    "caso":"JS2016ch40",
+    "idcomuna":5501
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-32.5040 ]
+    },
+    "properties": {
+    "caso":"IP2017ch1",
+    "idcomuna":5601
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-32.5040 ]
+    },
+    "properties": {
+    "caso":"NS2016ch24",
+    "idcomuna":5701
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-32.5040 ]
+    },
+    "properties": {
+    "caso":"RE2017ch12",
+    "idcomuna":5802
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-32.5040 ]
+    },
+    "properties": {
+    "caso":"LJ2016ch32",
+    "idcomuna":5804
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-34.5755 ]
+    },
+    "properties": {
+    "caso":"CL2017ch15",
+    "idcomuna":6101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-34.5755 ]
+    },
+    "properties": {
+    "caso":"MD2017ch17",
+    "idcomuna":6101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-34.5755 ]
+    },
+    "properties": {
+    "caso":"KM2017ch21",
+    "idcomuna":6110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-34.5755 ]
+    },
+    "properties": {
+    "caso":"AG2016ch9",
+    "idcomuna":6206
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-34.5755 ]
+    },
+    "properties": {
+    "caso":"MP2017ch20",
+    "idcomuna":6206
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0022,-34.5755 ]
+    },
+    "properties": {
+    "caso":"CA2017ch33",
+    "idcomuna":6303
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.5724,-35.5164 ]
+    },
+    "properties": {
+    "caso":"YC2016ch28",
+    "idcomuna":7101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.5724,-35.5164 ]
+    },
+    "properties": {
+    "caso":"JS2017ch28",
+    "idcomuna":7105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.5724,-35.5164 ]
+    },
+    "properties": {
+    "caso":"GR2017ch8",
+    "idcomuna":7304
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.5724,-35.5164 ]
+    },
+    "properties": {
+    "caso":"CV2017ch4",
+    "idcomuna":7406
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-36.9777 ]
+    },
+    "properties": {
+    "caso":"GF2016ch26",
+    "idcomuna":8101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-36.9777 ]
+    },
+    "properties": {
+    "caso":"EU2016ch42",
+    "idcomuna":8102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-36.9777 ]
+    },
+    "properties": {
+    "caso":"BV2018ch1",
+    "idcomuna":8104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-36.9777 ]
+    },
+    "properties": {
+    "caso":"MF2016ch30",
+    "idcomuna":8105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-36.9777 ]
+    },
+    "properties": {
+    "caso":"MC2016ch8",
+    "idcomuna":8110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-36.9777 ]
+    },
+    "properties": {
+    "caso":"DM2017ch18",
+    "idcomuna":8203
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-36.9777 ]
+    },
+    "properties": {
+    "caso":"CC2016ch37",
+    "idcomuna":8304
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-36.9777 ]
+    },
+    "properties": {
+    "caso":"AR2017ch7",
+    "idcomuna":8410
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-38.9489 ]
+    },
+    "properties": {
+    "caso":"MC2016ch2",
+    "idcomuna":9101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-38.9489 ]
+    },
+    "properties": {
+    "caso":"RB2017ch24",
+    "idcomuna":9101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-38.9489 ]
+    },
+    "properties": {
+    "caso":"JP2017ch22",
+    "idcomuna":9105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-38.9489 ]
+    },
+    "properties": {
+    "caso":"NP2016ch41",
+    "idcomuna":9108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-38.9489 ]
+    },
+    "properties": {
+    "caso":"GG2017ch16",
+    "idcomuna":9118
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-38.9489 ]
+    },
+    "properties": {
+    "caso":"NL2016ch10",
+    "idcomuna":9209
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.1416,-41.9197 ]
+    },
+    "properties": {
+    "caso":"BM2016ch36",
+    "idcomuna":10101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.1416,-41.9197 ]
+    },
+    "properties": {
+    "caso":"VM2016ch35",
+    "idcomuna":10101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.1416,-41.9197 ]
+    },
+    "properties": {
+    "caso":"PV2017ch14",
+    "idcomuna":10205
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3007,-46.3783 ]
+    },
+    "properties": {
+    "caso":"DM2017ch34",
+    "idcomuna":11102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3007,-46.3783 ]
+    },
+    "properties": {
+    "caso":"GO2017ch29",
+    "idcomuna":11301
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.1685,-52.2064 ]
+    },
+    "properties": {
+    "caso":"MG2016ch23",
+    "idcomuna":12101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"LH2017ch3",
+    "idcomuna":13101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"PQ2016ch38",
+    "idcomuna":13101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"Sd2017ch38",
+    "idcomuna":13101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"VG2016ch22",
+    "idcomuna":13101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"YB2017ch27",
+    "idcomuna":13101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"YF2017ch6",
+    "idcomuna":13101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"M 2016ch31",
+    "idcomuna":13103
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"DA2016ch33",
+    "idcomuna":13109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"AO2016ch18",
+    "idcomuna":13111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"LR2017ch40",
+    "idcomuna":13116
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"SS2016ch7",
+    "idcomuna":13119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"EE2016ch3",
+    "idcomuna":13119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"MC2016ch44",
+    "idcomuna":13120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"MH2017ch32",
+    "idcomuna":13120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"Y 2016ch6",
+    "idcomuna":13123
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"AL2017ch9",
+    "idcomuna":13124
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"BL2016ch19",
+    "idcomuna":13124
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"CG2016ch1",
+    "idcomuna":13127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"MS2017ch23",
+    "idcomuna":13127
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"BB2016ch29",
+    "idcomuna":13128
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"MM2017ch35",
+    "idcomuna":13201
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"NB2017ch11",
+    "idcomuna":13203
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"CM2016ch34",
+    "idcomuna":13301
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"CV2017ch37",
+    "idcomuna":13401
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"MG2017ch5",
+    "idcomuna":13401
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"PV2017ch25",
+    "idcomuna":13401
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"V 2016ch21",
+    "idcomuna":13404
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"IG2017ch30",
+    "idcomuna":13501
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"SN2017ch2",
+    "idcomuna":13501
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"RE2017ch10",
+    "idcomuna":13501
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"CN2016ch39",
+    "idcomuna":13602
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6505,-33.4376 ]
+    },
+    "properties": {
+    "caso":"NP2016ch27",
+    "idcomuna":13604
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-40.2310 ]
+    },
+    "properties": {
+    "caso":"CB2016ch4",
+    "idcomuna":14101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-40.2310 ]
+    },
+    "properties": {
+    "caso":"KU2017ch39",
+    "idcomuna":14101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3311,-40.2310 ]
+    },
+    "properties": {
+    "caso":"YJ2017ch41",
+    "idcomuna":14108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.7622,-36.7226 ]
+    },
+    "properties": {
+    "caso":"YA2016ch14",
+    "idcomuna":16107
+    }
+  }
+]
+}

@@ -1,0 +1,885 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -68.8670,-19.8830 ]
+    },
+    "properties": {
+    "Comuna":"Rinconada",
+    "Id Femicidio":"NA2016ch13"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -68.9240,-22.4740 ]
+    },
+    "properties": {
+    "Comuna":"Calama",
+    "Id Femicidio":"MB2016ch43"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -68.9240,-22.4740 ]
+    },
+    "properties": {
+    "Comuna":"Calama",
+    "Id Femicidio":"BT2016ch25"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -69.6170,-20.9000 ]
+    },
+    "properties": {
+    "Comuna":"La Granja",
+    "Id Femicidio":"AO2016ch18"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.0500,-27.8670 ]
+    },
+    "properties": {
+    "Comuna":"San Antonio",
+    "Id Femicidio":"IP2017ch1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.3530,-33.6440 ]
+    },
+    "properties": {
+    "Comuna":"San José de Maipo",
+    "Id Femicidio":"NB2017ch11"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.3950,-23.6510 ]
+    },
+    "properties": {
+    "Comuna":"Antofagasta",
+    "Id Femicidio":"LC2017ch13"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.3950,-23.6510 ]
+    },
+    "properties": {
+    "Comuna":"Antofagasta",
+    "Id Femicidio":"KW2016ch5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.5660,-33.4250 ]
+    },
+    "properties": {
+    "Comuna":"Santiago",
+    "Id Femicidio":"YF2017ch6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.5660,-33.4250 ]
+    },
+    "properties": {
+    "Comuna":"Santiago",
+    "Id Femicidio":"YB2017ch27"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.5660,-33.4250 ]
+    },
+    "properties": {
+    "Comuna":"Santiago",
+    "Id Femicidio":"VG2016ch22"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.5660,-33.4250 ]
+    },
+    "properties": {
+    "Comuna":"Santiago",
+    "Id Femicidio":"Sd2017ch38"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.5660,-33.4250 ]
+    },
+    "properties": {
+    "Comuna":"Santiago",
+    "Id Femicidio":"PQ2016ch38"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.5660,-33.4250 ]
+    },
+    "properties": {
+    "Comuna":"Santiago",
+    "Id Femicidio":"LH2017ch3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.5700,-33.6160 ]
+    },
+    "properties": {
+    "Comuna":"Puente Alto",
+    "Id Femicidio":"MM2017ch35"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6040,-33.4540 ]
+    },
+    "properties": {
+    "Comuna":"Ñuñoa",
+    "Id Femicidio":"MH2017ch32"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6040,-33.4540 ]
+    },
+    "properties": {
+    "Comuna":"Ñuñoa",
+    "Id Femicidio":"MC2016ch44"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6160,-33.4350 ]
+    },
+    "properties": {
+    "Comuna":"Providencia",
+    "Id Femicidio":"Y 2016ch6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6400,-33.4060 ]
+    },
+    "properties": {
+    "Comuna":"Recoleta",
+    "Id Femicidio":"MS2017ch23"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6400,-33.4060 ]
+    },
+    "properties": {
+    "Comuna":"Recoleta",
+    "Id Femicidio":"CG2016ch1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6630,-33.5290 ]
+    },
+    "properties": {
+    "Comuna":"La Cisterna",
+    "Id Femicidio":"DA2016ch33"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6680,-33.1940 ]
+    },
+    "properties": {
+    "Comuna":"Colina",
+    "Id Femicidio":"CM2016ch34"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6870,-33.5220 ]
+    },
+    "properties": {
+    "Comuna":"Lo Espejo",
+    "Id Femicidio":"LR2017ch40"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6870,-33.5820 ]
+    },
+    "properties": {
+    "Comuna":"San Bernardo",
+    "Id Femicidio":"PV2017ch25"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6870,-33.5820 ]
+    },
+    "properties": {
+    "Comuna":"San Bernardo",
+    "Id Femicidio":"MG2017ch5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.6870,-33.5820 ]
+    },
+    "properties": {
+    "Comuna":"San Bernardo",
+    "Id Femicidio":"CV2017ch37"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.7090,-33.9770 ]
+    },
+    "properties": {
+    "Comuna":"Mostazal",
+    "Id Femicidio":"KM2017ch21"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.7130,-32.7500 ]
+    },
+    "properties": {
+    "Comuna":"San Felipe",
+    "Id Femicidio":"NS2016ch24"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.7230,-33.3980 ]
+    },
+    "properties": {
+    "Comuna":"Renca",
+    "Id Femicidio":"BB2016ch29"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.7230,-33.8120 ]
+    },
+    "properties": {
+    "Comuna":"Paine",
+    "Id Femicidio":"V 2016ch21"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.7350,-33.4220 ]
+    },
+    "properties": {
+    "Comuna":"Cerro Navia",
+    "Id Femicidio":"M2016ch31"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.7410,-34.1620 ]
+    },
+    "properties": {
+    "Comuna":"Rancagua",
+    "Id Femicidio":"MD2017ch17"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.7410,-34.1620 ]
+    },
+    "properties": {
+    "Comuna":"Rancagua",
+    "Id Femicidio":"CL2017ch15"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.7880,-33.4900 ]
+    },
+    "properties": {
+    "Comuna":"Maipú",
+    "Id Femicidio":"SS2016ch7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.7880,-33.4900 ]
+    },
+    "properties": {
+    "Comuna":"Maipú",
+    "Id Femicidio":"EE2016ch3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.8000,-33.5760 ]
+    },
+    "properties": {
+    "Comuna":"Padre Hurtado",
+    "Id Femicidio":"NP2016ch27"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.8360,-33.4110 ]
+    },
+    "properties": {
+    "Comuna":"Pudahuel",
+    "Id Femicidio":"BL2016ch19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.8360,-33.4110 ]
+    },
+    "properties": {
+    "Comuna":"Pudahuel",
+    "Id Femicidio":"AL2017ch9"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -70.9070,-53.1480 ]
+    },
+    "properties": {
+    "Comuna":"Punta Arenas",
+    "Id Femicidio":"MG2016ch23"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0170,-33.6840 ]
+    },
+    "properties": {
+    "Comuna":"El Monte",
+    "Id Femicidio":"CN2016ch39"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.0420,-34.7080 ]
+    },
+    "properties": {
+    "Comuna":"Chimbarongo",
+    "Id Femicidio":"CA2017ch33"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.1790,-31.6390 ]
+    },
+    "properties": {
+    "Comuna":"Illapel",
+    "Id Femicidio":"AA2017ch31"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2080,-33.6890 ]
+    },
+    "properties": {
+    "Comuna":"Melipilla",
+    "Id Femicidio":"SN2017ch2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2080,-33.6890 ]
+    },
+    "properties": {
+    "Comuna":"Melipilla",
+    "Id Femicidio":"RE2017ch10"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2080,-33.6890 ]
+    },
+    "properties": {
+    "Comuna":"Melipilla",
+    "Id Femicidio":"IG2017ch30"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2470,-29.9070 ]
+    },
+    "properties": {
+    "Comuna":"La Serena",
+    "Id Femicidio":"FR2017ch26"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2610,-33.0030 ]
+    },
+    "properties": {
+    "Comuna":"Limache",
+    "Id Femicidio":"RE2017ch12"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2640,-32.9150 ]
+    },
+    "properties": {
+    "Comuna":"Quillota",
+    "Id Femicidio":"JS2016ch40"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.2790,-35.0900 ]
+    },
+    "properties": {
+    "Comuna":"Molina",
+    "Id Femicidio":"GR2017ch8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.3070,-29.9710 ]
+    },
+    "properties": {
+    "Comuna":"Coquimbo",
+    "Id Femicidio":"AC2017ch19"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.3290,-33.0660 ]
+    },
+    "properties": {
+    "Comuna":"Villa Alemana",
+    "Id Femicidio":"LJ2016ch32"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.4670,-35.0500 ]
+    },
+    "properties": {
+    "Comuna":"San Javier",
+    "Id Femicidio":"CV2017ch4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.5150,-33.0250 ]
+    },
+    "properties": {
+    "Comuna":"Viña del Mar",
+    "Id Femicidio":"VZ2017ch36"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.5720,-35.5160 ]
+    },
+    "properties": {
+    "Comuna":"Maule",
+    "Id Femicidio":"JS2017ch28"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.6570,-35.4230 ]
+    },
+    "properties": {
+    "Comuna":"Talca",
+    "Id Femicidio":"YC2016ch28"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.8390,-44.2190 ]
+    },
+    "properties": {
+    "Comuna":"Lago Verde",
+    "Id Femicidio":"DM2017ch34"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.8940,-34.6610 ]
+    },
+    "properties": {
+    "Comuna":"Paredones",
+    "Id Femicidio":"MP2017ch20"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -71.8940,-34.6610 ]
+    },
+    "properties": {
+    "Comuna":"Paredones",
+    "Id Femicidio":"AG2016ch9"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.0910,-36.9780 ]
+    },
+    "properties": {
+    "Comuna":"Pemuco",
+    "Id Femicidio":"AR2017ch7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.2330,-35.2830 ]
+    },
+    "properties": {
+    "Comuna":"Cañete",
+    "Id Femicidio":"DM2017ch18"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.3400,-39.6420 ]
+    },
+    "properties": {
+    "Comuna":"Panguipulli",
+    "Id Femicidio":"YJ2017ch41"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.4270,-38.5290 ]
+    },
+    "properties": {
+    "Comuna":"Lautaro",
+    "Id Femicidio":"NP2016ch41"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.4690,-36.7380 ]
+    },
+    "properties": {
+    "Comuna":"Quillón",
+    "Id Femicidio":"YA2016ch14"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.5500,-47.2670 ]
+    },
+    "properties": {
+    "Comuna":"Cochrane",
+    "Id Femicidio":"GO2017ch29"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.5830,-37.6670 ]
+    },
+    "properties": {
+    "Comuna":"Renaico",
+    "Id Femicidio":"NL2016ch10"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.5990,-38.7270 ]
+    },
+    "properties": {
+    "Comuna":"Temuco",
+    "Id Femicidio":"RB2017ch24"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.5990,-38.7270 ]
+    },
+    "properties": {
+    "Comuna":"Temuco",
+    "Id Femicidio":"MC2016ch2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.6220,-38.9540 ]
+    },
+    "properties": {
+    "Comuna":"Freire",
+    "Id Femicidio":"JP2017ch22"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.6620,-36.8210 ]
+    },
+    "properties": {
+    "Comuna":"Florida",
+    "Id Femicidio":"BV2018ch1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.7000,-37.2670 ]
+    },
+    "properties": {
+    "Comuna":"Laja",
+    "Id Femicidio":"CC2016ch37"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.9330,-36.9670 ]
+    },
+    "properties": {
+    "Comuna":"Hualqui",
+    "Id Femicidio":"MF2016ch30"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.9930,-41.4540 ]
+    },
+    "properties": {
+    "Comuna":"Puerto Montt",
+    "Id Femicidio":"VM2016ch35"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -72.9930,-41.4540 ]
+    },
+    "properties": {
+    "Comuna":"Puerto Montt",
+    "Id Femicidio":"BM2016ch36"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.0290,-36.8150 ]
+    },
+    "properties": {
+    "Comuna":"Concepción",
+    "Id Femicidio":"GF2016ch26"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.1050,-36.7360 ]
+    },
+    "properties": {
+    "Comuna":"Talcahuano",
+    "Id Femicidio":"MC2016ch8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.1570,-36.9820 ]
+    },
+    "properties": {
+    "Comuna":"Coronel",
+    "Id Femicidio":"EU2016ch42"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.2170,-39.2170 ]
+    },
+    "properties": {
+    "Comuna":"Toltén",
+    "Id Femicidio":"GG2017ch16"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.2330,-39.8000 ]
+    },
+    "properties": {
+    "Comuna":"Valdivia",
+    "Id Femicidio":"KU2017ch39"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.2330,-39.8000 ]
+    },
+    "properties": {
+    "Comuna":"Valdivia",
+    "Id Femicidio":"CB2016ch4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -73.6510,-42.3740 ]
+    },
+    "properties": {
+    "Comuna":"Dalcahue",
+    "Id Femicidio":"PV2017ch14"
+    }
+  }
+]
+}
