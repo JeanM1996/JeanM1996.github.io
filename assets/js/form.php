@@ -1,7 +1,7 @@
 <?php 
 if ($_POST["email"]<>'') { 
-    $ToEmail = 'youremail@site.com'; 
-    $EmailSubject = 'Site contact form'; 
+    $ToEmail = 'jeanpaulmosquera1996@gmail.com'; 
+    $EmailSubject = 'Contacto'; 
     $mailheader = "From: ".$_POST["email"]."\r\n"; 
     $mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
     $mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
@@ -13,4 +13,7 @@ if ($_POST["email"]<>'') {
 Your message was sent
 <?php 
 } else { 
+?> 
+Mensaje no enviado ha ocurrido un error
+<?php 
 ?> 
