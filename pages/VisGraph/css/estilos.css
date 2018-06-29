@@ -1,0 +1,202 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	font-family:arial;
+}
+header{
+	margin: 0 auto;
+	padding: 0% 0% 0% 2%;
+	align-content: center;
+	width: 89%;
+	background:#003F72;
+
+}
+ .logo{
+ 	margin-left: 0%;
+ 	height:24% ;
+ 	width:24%;
+
+ }
+ .info2{
+ 	color: white;
+ }
+ .logo, .info2{
+ 	display: inline-block;
+	padding: 2% 10% 5% 4%;
+	vertical-align: middle;
+ }
+.info{
+	text-align: center;
+	font-size:110%;
+}
+header nav {
+
+	text-align: center;
+	margin-top:0%; 
+
+	margin-bottom:10%;
+}
+
+footer nav a{
+	height:5em;
+	width:5em;
+}
+
+
+
+
+header nav	a{
+	background: #EAAB00;
+	text-decoration: none;
+	
+	border-right-color: #CCCCCC;
+	font-weight: bold;
+	color: white;
+	height: 1em;
+	padding: 2% 7% 2% 7%;
+	text-decoration: none;
+}
+header nav a:hover{
+
+	background: #003F72;
+	color:white;
+	height: 1em;
+}
+h6{
+	color: #EAAB00;
+}
+
+main{
+	margin: 0 auto;
+	width: 90%;
+}
+
+
+h1,h2,h3,p{
+	text-align: center;
+}
+p{
+	color:black;
+}
+
+
+
+#container {
+    height: 500px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+#container1 {
+    height: 500px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+#container2 {
+    height: 500px; 
+    min-width: 310px; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 50%;
+        width: 50%;
+        margin: 0 auto;
+	    align-content: center;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+footer{
+	width: 100%;
+	padding: 0.3em 0.3em  0.3em 0.3em;
+	background: #003F72;
+}
+
+#viz {
+            width: 800px;
+            height: 800px;
+            border: 1px solid lightgray;
+            font: 22pt arial;
+            margin-left: 20%
+}
+
+th, td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #003F72;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+}
+caption {
+   padding: 0.5em;
+   color: #fff;
+    background: #000;
+}
+th {
+   background: #eee;
+}
+.title{
+	text-align: center;
+}
+#cypher{
+	margin-left: 20%;
+	text-align: center;
+}
+.example{
+	text-align: center;
+	font-style: inherit;
+	color: #EAAB00;
+	text-decoration: underline;
+}
+#reload{
+	margin-left: 45%;
+	background: #003F72;
+	padding: 1% 1% 1% 1%;
+	color: white;
+	text-align: center;
+	border-color: #003F72;
+}
+#reload:hover{
+	margin-left: 45%;
+	background: #EAAB00;
+	padding: 1% 1% 1% 1%;
+	color: white;
+	text-align: center;
+	border-color: #003F72;
+}
+#me1{
+	margin-top: 1%;
+	display:inline-block;
+
+}

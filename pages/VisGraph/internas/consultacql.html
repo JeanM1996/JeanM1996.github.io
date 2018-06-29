@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Consulta a partir de CQL</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+      <!-- FIXME: load from dist -->
+  <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+	<script language="Javascript" type="text/javascript" src="../javascript/script1.js"></script>
+>
+</head>
+<body onload="draw()">
+<header>
+		<img href="http://www.utpl.edu.ec" src="../images/utpl.png"  class="logo" >
+		<section class="info2">
+			<h3 class="info">Knowledge-Based Systems Research Group | UTPL</h4>
+			<br>
+			<h4 class="info">Personajes Historicos del Ecuador</h3>
+			<br>
+			<h5 class="info">Graph Visualization</h5>
+			<br>
+		</section>
+			<nav class="menu">
+				   <a href="../index.html">Inicio</a>
+				   <a href="../internas/consultacql.html">Consulta CQL</a>
+				   <a href="../internas/consultaint.html">Consulta Inteligente</a>
+			</nav>
+</header>
+  <h5 class="title"><strong>RELACIONES ENTRE NODOS</strong></h5>
+ <table class="tabnr"style="width:100%">
+  <tr>
+  <tr>
+    <td>Personaje</td>
+    <td>Personaje</td>
+    <td>Personaje</td>
+    <td>Personaje</td>
+    <td>Personaje</td>
+    <td>Personaje</td>
+    <td>Personaje</td>
+    <td>Personaje</td>
+    <td>Padre</td>
+  </tr>
+  <tr>
+    <td>HIJO_DE</td>
+    <td>HIJO_DE</td>
+    <td>NACIO_EN</td>
+    <td>MURIO_EN</td>
+    <td>ES</td>
+    <td>INSTRUIDO_EN</td>
+    <td>HAZAÑA</td>
+    <td>AUTOR_DE</td>
+    <td>MARRY_WITH</td>
+  </tr>
+    <tr>
+    <td>Padre</td>
+    <td>Madre</td>
+    <td>Ciudad</td>
+    <td>Ciudad</td>
+    <td>Ocupacion</td>
+    <td>Educacion</td>
+    <td>Logro</td>
+    <td>Obra</td>
+    <td>Madre</td>
+  </tr>
+</table> 
+<h5 class="title"><strong>INTERPRETADOR DE SENTENCIAS CYPHER (CQL)</strong></h5>
+<h5 class="example">Ejemplo: MATCH (n)-[r:NACIO_EN]->(m) RETURN *</h5>
+    <textarea rows="1" cols=100 id="cypher"></textarea><br>
+    <input  type="submit" value="Consultar" id="reload">
+<!-- <div id="viz"></div> --->
+<section id="container"></section>
+<br>
+</main>
+  <footer>
+        <p>Loja, Ecuador</p>
+        <p>2018</p>
+
+  </footer>
+  </body>
+	<script>
+    $("#reload").click(function() {
+        var cypher = $("#cypher").val();
+        if (cypher.length > 3) {
+            viz.renderWithCypher(cypher);
+        } else {
+            console.log("reload");
+            viz.reload();
+        }
+    });
+    $("#stabilize").click(function() {
+        viz.stabilize();
+    })
+</script
+</html>
