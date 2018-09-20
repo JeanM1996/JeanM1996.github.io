@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Graph Results</title>
+
+    <!-- Add Popoto default CSS styles -->
+    <link rel="stylesheet" href="https://unpkg.com/popoto/dist/popoto.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vis/dist/vis-network.min.css">
+    <style>
+        #popoto-graph:fullscreen {
+            width: 100%;
+            height: 100%;
+        }
+        #popoto-graph:-webkit-full-screen {
+            width: 100%;
+            height: 100%;
+        }
+        #popoto-graph:-moz-full-screen {
+            width: 100%;
+            height: 100%;
+        }
+        #popoto-graph:-ms-fullscreen {
+            width: 100%;
+            height: 100%;
+        }
+        .ppt-div-graph {
+            height: 50%;
+        }
+        .frame {
+            height: 550px;
+            /*background-color: #F8F9FB;*/
+            position: relative;
+            top: 0;
+            opacity: 1;
+            max-height: 10000px;
+            border-bottom: 1px solid #e6e9ef;
+        }
+    </style>
+</head>
+<body class="ppt-body">
+
+<section class="ppt-section-main" style="height: 700px">
+    <div class="ppt-section-header">
+        <span class="ppt-header-span">Personajes Historicos -</span> Knowledge Graph
+    </div>
+        <nav id="popoto-taxonomy" class="ppt-taxo-nav">
+            <h3>NODOS</h3>
+        </nav>
+    <div id="popoto-graph" class="ppt-div-graph">
+        <!-- Graph is generated here-->
+    </div>
+    <div id="popoto-query" class="ppt-container-query">
+        <!-- Query viewer will be generated here -->
+    </div>
+    <div id="popoto-cypher" class="ppt-container-query">
+        <!-- Query viewer is generated here -->
+    </div>
+    <div id="vis" class="ppt-div-graph" style="margin-top: 20px">
+        <!-- Results visualization will be generated here -->
+    </div>
+
+
+    <!-- Add a header with total number of results count -->
+    <div class="ppt-section-header">
+        RESULTS <span id="rescount" class="ppt-count"></span>
+    </div>
+
+    <div id="popoto-results" class="ppt-container-results">
+        <!-- Results are generated here -->
+    </div>
+
+</section>
+
+<!-- Required scripts -->
+<script src="https://unpkg.com/jquery" charset="utf-8"></script>
+<script src="https://unpkg.com/d3" charset="utf-8"></script>
+<script src="https://unpkg.com/popoto" charset="utf-8"></script>
+<script src="https://unpkg.com/vis/dist/vis-network.min.js" charset="utf-8"></script>
+<script>
+    // Demo Neo4j database settings hosted on GrapheneDb
+    popoto.rest.CYPHER_URL = "https://hobby-mmfdkjgcconogbkeoapidobl.dbs.graphenedb.com:24780/db/data/transaction/commit";
+    /**
+     * Add this authorization property if your Neo4j server uses basic HTTP authentication.
+     * The value of this property must be "Basic <payload>", where "payload" is a base64 encoded string of "username:password".
+     *
+     * "btoa" is a JavaScript function that can be used to encode the user and password value in base64 but it is recommended to directly use the Base64 value.
+     *
+     *  For example Base64 encoded value of "neo4j:password" is "bmVvNGo6cGFzc3dvcmQ="
+     *  Note that it is not a safe way to keep credentials as anyone can have access to this code in your web page.
+     */
+    popoto.rest.AUTHORIZATION = "Basic " + btoa("popoto:b.mJiOBto02zYg.Iz2EDqfjejjsBpY9");
+    // Define the list of label provider to customize the graph behavior:
+    // Only two labels are used in Neo4j movie graph example: "Movie" and "Person"
+    popoto.provider.node.Provider = {
+        "Personaje": {
+            "returnAttributes": ["name",],
+            "constraintAttribute": "name"
+        },
+        "Obra": {
+            "returnAttributes": ["name",],
+            "constraintAttribute": "name"
+        },
+        "Logro": {
+            "returnAttributes": ["name",],
+            "constraintAttribute": "name"
+        },
+        "Padre": {
+            "returnAttributes": ["name",],
+            "constraintAttribute": "name"
+        },
+        "Madre": {
+            "returnAttributes": ["name",],
+            "constraintAttribute": "name"
+        },
+        "Pareja": {
+            "returnAttributes": ["name",],
+            "constraintAttribute": "name"
+        },
+        "Educación": {
+            "returnAttributes": ["name",],
+            "constraintAttribute": "name"
+        },
+        "Ocupacion": {
+            "returnAttributes": ["name",],
+            "constraintAttribute": "name"
+        },
+        "Ciudad": {
+            "returnAttributes": ["name"],
+            "constraintAttribute": "name"
+        },
+        "Ciudad": {
+            "returnAttributes": ["name", "country"],
+            "constraintAttribute": "name",
+            // Customize result display for Person nodes:
+            "displayResults": function (pResultElmt) {
+                // Here D3.js mechanisms is used to generate HTML code.
+                // By default Popoto.js generates a <p> element for each result.
+                // pResultElmt parameter is the <p> element selected with D3.js
+                // So for "Person" result nodes two elements are generated:
+                // An <h3> element containing the person name
+                pResultElmt.append("h4")
+                    .text(function (result) {
+                        return result.attributes.name;
+                    });
+                // A <span> element with the computed age from born attribute
+
+            }
+        }
+    };
+    // Change the number of displayed results:
+    popoto.query.RESULTS_PAGE_SIZE = 25;
+    popoto.logger.LEVEL = popoto.logger.LogLevels.INFO;
+    /**
+     * Add a listener on result received to update map.
+     */
+    popoto.result.onGraphResultReceived(
+        function (graphResultObject) {
+            var nodes = convertNodes(graphResultObject.nodes);
+            var edges = convertEdges(graphResultObject.edges);
+            var container = document.getElementById('vis');
+            // provide the data in the vis format
+            var data = {
+                nodes: nodes,
+                edges: edges
+            };
+            var options = {
+                nodes: {
+                    shape: 'circle',
+                    borderWidth: 2,
+                    size: 20,
+                    font: {
+                        size: 10,
+                        color: '#ffffff'
+                    }
+                },
+                edges: {
+                    length: 200,
+                    font: {
+                        align: 'top',
+                        color: '#ffffff',
+                        strokeWidth: 0,
+                        size: 10
+                    },
+                    arrows: 'to'
+                },
+                groups: {
+                    "Personaje": {
+                        color: {background: '#68BDF6', border: '#5CA8DB'}
+                    }
+                }
+            };
+            // initialize the network
+            var network = new vis.Network(container, data, options);
+        }
+    );
+    function convertNodes(nodes) {
+        var convertedNodes = [];
+        nodes.forEach(function (node) {
+            var nodeLabel = node.labels[0];
+            convertedNodes.push({
+                id: node.id,
+                label: (nodeLabel === "Personaje" ? node.properties["name"] : node.properties["name"]),
+                group: nodeLabel
+            })
+        });
+        return convertedNodes;
+    }
+    function convertEdges(edges) {
+        var convertedEdges = [];
+        edges.forEach(function (edge) {
+            convertedEdges.push({
+                from: edge.startNode,
+                to: edge.endNode,
+                label: edge.type
+            })
+        });
+        return convertedEdges;
+    }
+    // Start the generation using parameter as root label of the query.
+    popoto.start({
+            label: "Personaje",
+            rel: [
+                {
+                    label: "MURIO_EN",
+                    target: {
+                        label: "Ciudad",
+
+                    }
+                }
+            ],
+
+        }
+    );
+</script>
+</body>
+</html>

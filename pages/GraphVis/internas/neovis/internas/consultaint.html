@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Consulta InteligenteL</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+      <!-- FIXME: load from dist -->
+  <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+  <script language="Javascript" type="text/javascript" src="../javascript/scriptc.js"></script>
+>
+</head>
+<body onload="draw()">
+<header>
+    <img href="http://www.utpl.edu.ec" src="../images/utpl.png"  class="logo" >
+    <section class="info2">
+      <h3 class="info">Knowledge-Based Systems Research Group | UTPL</h4>
+      <br>
+      <h4 class="info">Personajes Historicos del Ecuador</h3>
+      <br>
+      <h5 class="info">Graph Visualization</h5>
+      <br>
+    </section>
+      <nav class="menu">
+           <a href="../index.html">Inicio</a>
+           <a href="../internas/consultacql.html">Consulta CQL</a>
+           <a href="../internas/consultaint.html">Consulta Inteligente</a>
+      </nav>
+</header>
+  <h5 class="title"><strong>Seleccione una opción</strong></h5>
+<h5 class="title"><strong>BUSQUEDA INTELIGENTE</strong></h5>
+<h5 class="example">Seleccione la opción y luego clic en el boton procesar según corresponda la selección al criterio seleccionado*</h5>
+  <table class="tabnr"style="width:100%">
+  <tr>
+  <tr>
+    <td><strong>En función a relacion entre nodos</strong></td>
+    <td><strong>En función a Personaje</strong></td>
+    <td><strong>En función a Lugar</strong></td>
+  </tr>
+  <tr>
+    <td>     
+    <select name="rel" id="rel" onchange="ShowSelected();">
+      <option value="" disabled selected >Seleccione una opción</option>
+      <option value="HIJO_DE">PADRES</option>
+      <option value="MARRY_WITH">MATRIMONIO</option>
+      <option value="NACIDO_EN">LUGAR</option>
+      <option value="INSTRUIDO_EN">EDUCACION</option>
+      <option value="HAZAÑA">LOGROS</option>
+      <option value="LABORÓ_EN">TRABAJOS</option>
+      <option value="AUTOR_DE">OBRAS DE CARACTER ARTISTICO, CIENTIFICO</option>
+      <option value="ES">PROFESIÓN</option>
+    </select >
+  </td>
+  <td>
+    <select name="per" id="per" onchange="ShowSelected1();">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value=Miguel Francisco Jerónimo de Carrión Palacio y Escudero>Miguel Francisco Jerónimo de Carrión Palacio y Escudero</option>
+                    <option value=José María Velasco Ibarra>José María Velasco Ibarra</option>
+                    <option value=Jose Maria Vivar Castro>Jose Maria Vivar Castro</option>
+                    <option value=Clodoveo Jaramillo Alvarado>Clodoveo Jaramillo Alvarado</option>
+                    <option value=Julio Hidalgo González>Julio Hidalgo González</option>
+                    <option value=Fausto Aguirre Tirado>Fausto Aguirre Tirado</option>
+                    <option value=Alfredo Pareja Diezcanseco >Alfredo Pareja Diezcanseco </option>
+                    <option value=Enrique Gil Gilbert>Enrique Gil Gilbert</option>
+                    <option value=Medardo Angel Silva>Medardo Angel Silva</option>
+                    <option value=Demetrio Aguilera Malta>Demetrio Aguilera Malta</option>
+                    <option value=Emiliano Ortega Espinoza>Emiliano Ortega Espinoza</option>
+                    <option value=Alejandro Carrion Aguirre>Alejandro Carrion Aguirre</option>
+                    <option value=Bernardo Valdivieso>Bernardo Valdivieso</option>
+                    <option value=Segundo Cueva Celi>Segundo Cueva Celi</option>
+                    <option value=Jose Felix de Valdivieso>Jose Felix de Valdivieso</option>
+                    <option value=Maximo Agustin Rodriguez>Maximo Agustin Rodriguez</option>
+                    <option value=Francisco Valdivieso Alvarado>Francisco Valdivieso Alvarado</option>
+                    <option value=Victor Mideros>Victor Mideros</option>
+                    <option value=Constantino Mendoza Moreira>Constantino Mendoza Moreira</option>
+                    <option value=Bolivar Mena Franco>Bolivar Mena Franco</option>
+                    <option value=Carlos Julio Arosemena Monroy>Carlos Julio Arosemena Monroy</option>
+                    <option value=Leon Esteban Febres-Cordero Ribadeneyra>Leon Esteban Febres-Cordero Ribadeneyra</option>
+                    <option value=Morayma Violeta  Luna Carrera>Morayma Violeta  Luna Carrera</option>
+                    <option value=Cesar  Davila Andrade>Cesar  Davila Andrade</option>
+                    <option value=Efrain  Jara Hidrovo>Efrain  Jara Hidrovo</option>
+                    <option value=Jose Miguel  Alvear Alvarado>Jose Miguel  Alvear Alvarado</option>
+                    <option value=Remigio  Crespo Toral>Remigio  Crespo Toral</option>
+                    <option value=Manuel de Jesús  Calle Pesantes>Manuel de Jesús  Calle Pesantes</option>
+                    <option value=Pedro Fermín  Cevallos Villacreses>Pedro Fermín  Cevallos Villacreses</option>
+                    <option value=Luis Benjamin Cordero Crespo>Luis Benjamin Cordero Crespo</option>
+                    <option value=Edgar Allan García Rivadeneira >Edgar Allan García Rivadeneira </option>
+                    <option value=Julio  Pazos Barrera>Julio  Pazos Barrera</option>
+                    <option value=Hernán  Rodríguez Castelo>Hernán  Rodríguez Castelo</option>
+                    <option value=Carlos Eduardo Jaramillo Castillo>Carlos Eduardo Jaramillo Castillo</option>
+                    <option value=César Raúl Enrique  Vallejo Corral>César Raúl Enrique  Vallejo Corral</option>
+                    <option value=Nelson  Estupiñán Bass>Nelson  Estupiñán Bass</option>
+                    <option value=Miguel Antonio Chávez Balladares>Miguel Antonio Chávez Balladares</option>
+                    <option value=Santiago  Páez Gallegos>Santiago  Páez Gallegos</option>
+                    <option value=Abdón  Ubidia >Abdón  Ubidia </option>
+                    <option value=Alicia  Yánez Cossío>Alicia  Yánez Cossío</option>
+                    <option value=Maria Isabel Carlota Jaramillo Jaramillo>Maria Isabel Carlota Jaramillo Jaramillo</option>
+                    <option value=Pamela  Cortes >Pamela  Cortes </option>
+                    <option value=Carlos  Aurelio Infante >Carlos  Aurelio Infante </option>
+                    <option value=Digna Estefania Romero Assen>Digna Estefania Romero Assen</option>
+                    <option value=Chistopher Bryant Velez Muñoz>Chistopher Bryant Velez Muñoz</option>
+                    <option value=Juan Fernando  Velasco Torres>Juan Fernando  Velasco Torres</option>
+                    <option value=Daniel   Betancorth >Daniel   Betancorth </option>
+                    <option value=Mirella   Cesa >Mirella   Cesa </option>
+                    <option value=Norberto  Enrique  Vargas  Mármol>Norberto  Enrique  Vargas  Mármol</option>
+                    <option value=Juan  Montalvo>Juan  Montalvo</option>
+                    <option value=Mercedes De Jesús   Molina>Mercedes De Jesús   Molina</option>
+                    <option value=Pablo  Merino>Pablo  Merino</option>
+                    <option value=Juan León   Mera Martínez>Juan León   Mera Martínez</option>
+                    <option value=Pedro Vicente   Maldonado>Pedro Vicente   Maldonado</option>
+                    <option value=Jamil   Mahuad>Jamil   Mahuad</option>
+                    <option value=Antonio   Neumane>Antonio   Neumane</option>
+                    <option value=Pablo  Palacio>Pablo  Palacio</option>
+                    <option value=José Joaquín Pino Ycaza>José Joaquín Pino Ycaza</option>
+                    <option value=Ricardo  Montesino>Ricardo  Montesino</option>
+                    <option value=Jaime Roldós Aguilera>Jaime Roldós Aguilera</option>
+                    <option value=Aurelio Espinoza Pólit>Aurelio Espinoza Pólit</option>
+                    <option value=Pedro Jorge Vera>Pedro Jorge Vera</option>
+                    <option value=Miguel Donoso Pareja>Miguel Donoso Pareja</option>
+                    <option value=Camilo  Egas>Camilo  Egas</option>
+                    <option value=Joaquín  Pinto Ortiz>Joaquín  Pinto Ortiz</option>
+                    <option value=José  de la Cuadra y Vargas>José  de la Cuadra y Vargas</option>
+                    <option value=Daniel Alvarez Burneo>Daniel Alvarez Burneo</option>
+                    <option value=Jorge Enrique Adoum>Jorge Enrique Adoum</option>
+                    <option value=Araceli Gilbert>Araceli Gilbert</option>
+                    <option value=Manuel de Jesús Lozano>Manuel de Jesús Lozano</option>
+                    <option value=Marcos Ochoa Muñoz>Marcos Ochoa Muñoz</option>
+                    <option value=Rafael  Minga>Rafael  Minga</option>
+                    <option value=Humberto  Fierro>Humberto  Fierro</option>
+                    <option value=Luis Salvador  Jaramillo>Luis Salvador  Jaramillo</option>
+                    <option value=Gonzalo Merino Perez>Gonzalo Merino Perez</option>
+                    <option value=Jorge Dávila Vázquez>Jorge Dávila Vázquez</option>
+                    <option value=Horonato Vázquez>Horonato Vázquez</option>
+                    <option value=Ángel Lonidas Araujo Chiriboga>Ángel Lonidas Araujo Chiriboga</option>
+                    <option value=Carlos Aurelio Rubira Infante>Carlos Aurelio Rubira Infante</option>
+                    <option value=Oscar Vela Descalzo>Oscar Vela Descalzo</option>
+                    <option value=Aleyda Quevedo Rojas>Aleyda Quevedo Rojas</option>
+                    <option value=Maria Fernanda Heredia>Maria Fernanda Heredia</option>
+                    <option value=Cristobal Zapata>Cristobal Zapata</option>
+                    <option value=Catalina Sojos>Catalina Sojos</option>
+                    <option value=Eliecer Cardenas Espinoza>Eliecer Cardenas Espinoza</option>
+                    <option value=Solange Rodriguez Pappe>Solange Rodriguez Pappe</option>
+                    <option value=Luis Carlos Musso Mujica>Luis Carlos Musso Mujica</option>
+                    <option value=Juan Bautista Aguirre Carbo>Juan Bautista Aguirre Carbo</option>
+                    <option value=Juan de Dios Morales>Juan de Dios Morales</option>
+                    <option value=Jacinto Morán de Butrón>Jacinto Morán de Butrón</option>
+                    <option value=Antonio Morales y Galavis>Antonio Morales y Galavis</option>
+                    <option value=Rafael Morán Valverde>Rafael Morán Valverde</option>
+                    <option value=Humberto More>Humberto More</option>
+                    <option value=Luis Moreno Andrade>Luis Moreno Andrade</option>
+                    <option value=Alfonso Moreno Mora>Alfonso Moreno Mora</option>
+                    <option value=Carlos Montúfar>Carlos Montúfar</option>
+                    <option value=Miguel Moreno Ordoñez>Miguel Moreno Ordoñez</option>
+                    <option value=Adolfo H. Simmonds>Adolfo H. Simmonds</option>
+                    <option value=Manuel Carrión Pinzano>Manuel Carrión Pinzano</option>
+                    <option value=Daniel Elías Palacio Moreno>Daniel Elías Palacio Moreno</option>
+                    <option value=Alfredo Rogelio Valdivieso Eguiguren>Alfredo Rogelio Valdivieso Eguiguren</option>
+                    <option value=Ramón María Narváez>Ramón María Narváez</option>
+                    <option value=Eduardo Mora Moreno>Eduardo Mora Moreno</option>
+                    <option value=Hermelinda Urvina Mayorga>Hermelinda Urvina Mayorga</option>
+                    <option value=Marieta de Veintimilla>Marieta de Veintimilla</option>
+                    <option value=María Manuela Dominga de Espejo y Aldaz>María Manuela Dominga de Espejo y Aldaz</option>
+                    <option value=Miguel Moreno Serrano>Miguel Moreno Serrano</option>
+                    <option value=Manuel Moreno Serrano>Manuel Moreno Serrano</option>
+                    <option value=Luis Monsalve Pozo>Luis Monsalve Pozo</option>
+                    <option value=Luis Molinari>Luis Molinari</option>
+                    <option value=Aurelio Mosquera Narváez>Aurelio Mosquera Narváez</option>
+                    <option value=Juan Pío Montúfar y Larrea>Juan Pío Montúfar y Larrea</option>
+                    <option value=Luis Moscoso Vega>Luis Moscoso Vega</option>
+                    <option value=Pedro Moncayo>Pedro Moncayo</option>
+                    <option value=Clotario Paz>Clotario Paz</option>
+                    <option value=Jefferson Leonardo Pérez Quezada>Jefferson Leonardo Pérez Quezada</option>
+                    <option value=Manuela Sáenz Aizpuru>Manuela Sáenz Aizpuru</option>
+                    <option value=José Eloy Alfaro Delgado>José Eloy Alfaro Delgado</option>
+                    <option value=Oswaldo Guayasamín>Oswaldo Guayasamín</option>
+                    <option value=Narcisa de Jesús Martillo Morán>Narcisa de Jesús Martillo Morán</option>
+                    <option value=Mariana de Jesús Paredes Flores>Mariana de Jesús Paredes Flores</option>
+                    <option value=Jose Enrique Gallegos Lara>Jose Enrique Gallegos Lara</option>
+                    <option value=Vicente Amador Flor Cedeño>Vicente Amador Flor Cedeño</option>
+                    <option value=Luis Miranda>Luis Miranda</option>
+                    <option value=Vicente Rocafuerte>Vicente Rocafuerte</option>
+                    <option value=Antonio José Francisco de Sucre y Alcalá>Antonio José Francisco de Sucre y Alcalá</option>
+                    <option value=Simón José Antonio de la Santisima Trinidad Bolívar y Palacios>Simón José Antonio de la Santisima Trinidad Bolívar y Palacios</option>
+                    <option value=Francisco Javier Eugenio de Santa Cruz y Espejo>Francisco Javier Eugenio de Santa Cruz y Espejo</option>
+                    <option value=José Joaquin Eufrasio de Olmedo y Maruri>José Joaquin Eufrasio de Olmedo y Maruri</option>
+                    <option value=Gabriel Gregorio Fernando José Maria García y Moreno y Morán de Buitron>Gabriel Gregorio Fernando José Maria García y Moreno y Morán de Buitron</option>
+                    <option value=Abdón Senén  Calderón Garaycoa>Abdón Senén  Calderón Garaycoa</option>
+                    <option value=Jorge Icaza Coronel>Jorge Icaza Coronel</option>
+                    <option value=Julio Alfredo Jaramillo Laurido>Julio Alfredo Jaramillo Laurido</option>
+                    <option value=Pio jaramillo Alvarado>Pio jaramillo Alvarado</option>
+                    <option value=Eduardo Kingman>Eduardo Kingman</option>
+                    <option value=José Antonio Eguiguren>José Antonio Eguiguren</option>
+                    <option value=Roberto Crespo Toral>Roberto Crespo Toral</option>
+                    <option value=Jose Alvear Alvarado>Jose Alvear Alvarado</option>
+                    <option value=Manuel J. Calle>Manuel J. Calle</option>
+                    <option value=Vicente Solano>Vicente Solano</option>
+                    <option value=Antonio Vega Muñoz>Antonio Vega Muñoz</option>
+                    <option value=Antonio Barrero>Antonio Barrero</option>
+                    <option value=Jose Maria Rodriguez>Jose Maria Rodriguez</option>
+                    <option value=Octavio Cordero Palacios>Octavio Cordero Palacios</option>
+                    <option value=Federico Proaño>Federico Proaño</option>
+                    <option value=Leonidas Eduardo Proaño Villalba>Leonidas Eduardo Proaño Villalba</option>
+                    <option value=Luis Alfredo Martínez Holguín>Luis Alfredo Martínez Holguín</option>
+                    <option value=Jorge  Velasco Mackenzie>Jorge  Velasco Mackenzie</option>
+                    <option value=Josè Luis Tamayo>Josè Luis Tamayo</option>
+                    <option value=Sixto Alfonso Durán-Ballén Cordovez >Sixto Alfonso Durán-Ballén Cordovez </option>
+                    <option value=Dolores Veintimilla de Galindo>Dolores Veintimilla de Galindo</option>
+                    <option value=Arturo Borja Pérez>Arturo Borja Pérez</option>
+                    <option value=Gonzalo Escudero>Gonzalo Escudero</option>
+                    <option value=Francisco Tobar García>Francisco Tobar García</option>
+                    <option value=Jorge Carrera Andrade>Jorge Carrera Andrade</option>
+                    <option value=Julio Enrique Moreno Peñaherrera>Julio Enrique Moreno Peñaherrera</option>
+                    <option value=Celiano Monge Navarrete>Celiano Monge Navarrete</option>
+                    <option value=Juan Murillo Miro>Juan Murillo Miro</option>
+                    <option value=Félix Alberto Muñoz y Vernaza>Félix Alberto Muñoz y Vernaza</option>
+                    <option value=Cristóbal Ojeda Dávila>Cristóbal Ojeda Dávila</option>
+                    <option value=Adalberto Ortiz>Adalberto Ortiz</option>
+                    <option value=Carlos Amable Ortiz>Carlos Amable Ortiz</option>
+                    <option value=Luis Padilla Guevara.>Luis Padilla Guevara.</option>
+
+
+    </select>
+  </td>
+  <td>
+    <select name="ci" id="ci" onchange="ShowSelected2();">
+                    <option value="" disabled selected>Seleccione una opción</option>
+                    <option value=Ambato>Ambato</option>
+                    <option value=Antioquia>Antioquia</option>
+                    <option value=Azogues>Azogues</option>
+                    <option value=Baños>Baños</option>
+                    <option value=Bogota>Bogota</option>
+                    <option value=Boston>Boston</option>
+                    <option value=Cadiz>Cadiz</option>
+                    <option value=Cañar>Cañar</option>
+                    <option value=Caracas>Caracas</option>
+                    <option value=Cariamanga>Cariamanga</option>
+                    <option value=Chanduy>Chanduy</option>
+                    <option value=Cotacachi>Cotacachi</option>
+                    <option value=Cuenca>Cuenca</option>
+                    <option value=Déleg>Déleg</option>
+                    <option value=Esmeraldas>Esmeraldas</option>
+                    <option value=Españoa>Españoa</option>
+                    <option value=Guayaquil>Guayaquil</option>
+                    <option value=Ibarra>Ibarra</option>
+                    <option value=Isla de Córcega>Isla de Córcega</option>
+                    <option value=Loja>Loja</option>
+                    <option value=Manta>Manta</option>
+                    <option value=Montecristi>Montecristi</option>
+                    <option value=Nobol>Nobol</option>
+                    <option value=Pichincha>Pichincha</option>
+                    <option value=Portoviejo>Portoviejo</option>
+                    <option value=Quito>Quito</option>
+                    <option value=Riobamba>Riobamba</option>
+                    <option value=Sozoranga>Sozoranga</option>
+                    <option value=(en blanco)>(en blanco)</option>
+                    <option value=Baba>Baba</option>
+
+    </select>  
+  </td>
+  </tr>
+    <tr>
+    <td><input  type="submit" value="Procesar" id="reload1"></td>
+    <td><input  type="submit" value="Procesar" id="reload2"></td>
+    <td><input  type="submit" value="Procesar" id="reload3"></td>
+  </tr>
+</table> 
+
+
+
+    <textarea rows="1" cols=100 id="cypher"></textarea><br>
+<!-- <div id="viz"></div> --->
+<section id="container"></section>
+<br>
+</main>
+  <footer>
+        <p>Loja, Ecuador</p>
+        <p>2018</p>
+
+  </footer>
+  </body>
+<script type="text/javascript">
+      $("#reload1").click(function() {
+        var cyphern=ShowSelected();
+        alert("Procesando");
+        $("#cypher").val(cyphern);
+        var cypher = $("#cypher").val();
+        if (cypher.length > 3) {
+            viz.renderWithCypher(cypher);
+        } else {
+            console.log("reload");
+            viz.reload();
+        }
+    }); 
+
+
+      $("#reload2").click(function() {
+        var cyphern=ShowSelected1();
+        alert("Procesando");
+        $("#cypher").val(cyphern);
+        var cypher = $("#cypher").val();
+        if (cypher.length > 3) {
+            viz.renderWithCypher(cypher);
+        } else {
+            console.log("reload");
+            viz.reload();
+        }
+    }); 
+
+      $("#reload3").click(function() {
+        var cyphern=ShowSelected2();
+        alert("Procesando");
+        $("#cypher").val(cyphern);
+        var cypher = $("#cypher").val();
+        if (cypher.length > 3) {
+            viz.renderWithCypher(cypher);
+        } else {
+            console.log("reload");
+            viz.reload();
+        }
+    }); 
+
+</script>
+</html>
