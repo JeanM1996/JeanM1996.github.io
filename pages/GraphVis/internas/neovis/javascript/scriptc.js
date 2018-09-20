@@ -32,7 +32,7 @@ RETURN [(a)-->(b) WHERE b.name = 'Bob' | b.age]
         function draw() {
             var config = {
                 container_id: "container",
-                server_url: "https://hobby-mmfdkjgcconogbkeoapidobl.dbs.graphenedb.com:24780",
+                server_url: "https://hobby-mmfdkjgcconogbkeoapidobl.dbs.graphenedb.com:24780/db/data/",
                 server_user: "popoto",
                 server_password: "b.mJiOBto02zYg.Iz2EDqfjejjsBpY9",
                 labels: {
