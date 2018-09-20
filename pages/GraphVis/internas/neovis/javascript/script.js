@@ -6,9 +6,9 @@
         function draw() {
             var config = {
                 container_id: "container",
-                server_url: "bolt://hauck-garden-lavender-litzy.graphstory.me:7687",
-                server_user: "hauck_garden_lavender_litzy",
-                server_password: "TCmRb2UN7BUiqcwwlsR8HpgmPK9Z5",
+                server_url: "bolt://hobby-mmfdkjgcconogbkeoapidobl.dbs.graphenedb.com:24786",
+                server_user: "popoto",
+                server_password: "b.mJiOBto02zYg.Iz2EDqfjejjsBpY9",
                 labels: {
                     //"Character": "name",
                     "Personaje": {
