@@ -6,7 +6,7 @@
         function draw() {
             var config = {
                 container_id: "container",
-                server_url: "bolt://hobby-mmfdkjgcconogbkeoapidobl.dbs.graphenedb.com:24786",
+                server_url: "https://hobby-mmfdkjgcconogbkeoapidobl.dbs.graphenedb.com:24780/db/data/",
                 server_user: "popoto",
                 server_password: "b.mJiOBto02zYg.Iz2EDqfjejjsBpY9",
                 labels: {
