@@ -1,0 +1,149 @@
+{
+  "nav": {
+    "title": "Jean Mosquera - Senior Flutter Developer",
+    "home": "Home",
+    "about": "About Me",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "experience": "Experience",
+    "language": "Language"
+  },
+  "hero": {
+    "greeting": "Hello, I'm Jean Mosquera",
+    "titles": [
+      "Software Engineer",
+      "Mobile Developer",
+      "Tech Lead",
+      "Innovator"
+    ],
+    "cta": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Welcome",
+    "intro": "I am a Software Engineer and Mobile Developer with over five years of experience, specializing in the development of native Android and hybrid Flutter applications. As a technical lead, I focus on spearheading architectural reengineering initiatives, establishing clean architectural standards, and implementing automated processes to optimize the development lifecycle. My expertise spans project management, data science, and blockchain technology.",
+    "skills": {
+      "flutter": "Flutter Apps",
+      "android": "Native Android",
+      "architecture": "Clean Architecture",
+      "cicd": "CI/CD & DevOps",
+      "dataScience": "Data Science",
+      "blockchain": "Blockchain"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "How I Can Help You",
+    "items": {
+      "mobileAndroid": {
+        "title": "Native Android Development",
+        "description": "Expert development of high-performance Android applications with modern architectural patterns"
+      },
+      "flutter": {
+        "title": "Flutter Cross-Platform Apps",
+        "description": "Create beautiful, fast iOS and Android apps from a single codebase with Flutter"
+      },
+      "webApps": {
+        "title": "Web Application Development",
+        "description": "Build responsive and dynamic web applications with modern frameworks and technologies"
+      },
+      "architecture": {
+        "title": "Clean Architecture & Design",
+        "description": "Establish scalable architectural standards and best practices for enterprise projects"
+      },
+      "cicd": {
+        "title": "CI/CD Pipeline Implementation",
+        "description": "Automate your development lifecycle with modern CI/CD tools and practices"
+      },
+      "consulting": {
+        "title": "Technical Consulting",
+        "description": "Expert guidance on technology strategy, architecture, and digital transformation"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "Featured Projects and Publications",
+    "filters": {
+      "all": "All",
+      "mobile": "Mobile Apps",
+      "web": "Web Apps",
+      "publications": "Publications"
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "items": {
+      "tres": {
+        "position": "Senior/Lead Flutter Developer",
+        "company": "Tres Astronautas",
+        "period": "Jul 2021 - Present",
+        "highlights": [
+          "Head of the Flutter team overseeing end-to-end development of web and mobile applications",
+          "Delivered over 40 enterprise-grade projects for clients like Rentandes and Finandina",
+          "Spearheaded mobile development lifecycle reengineering with Clean Architecture and CI/CD automation",
+          "Collaborated with stakeholders to transform business requirements into intuitive digital features"
+        ]
+      },
+      "freelance": {
+        "position": "Android/Flutter Developer",
+        "company": "Freelance",
+        "period": "2017 - 2021",
+        "highlights": [
+          "Independently developed and published proprietary mobile applications on Google Play Store",
+          "Created three successful mobile apps with over 5,000 combined downloads",
+          "Collaborated with UTPL Software Research Group on data collection applications",
+          "Drove digital transformation initiatives for multiple businesses"
+        ]
+      },
+      "utpl": {
+        "position": "Mobile Developer & Project Technician",
+        "company": "Private Technical University of Loja (UTPL)",
+        "period": "Apr 2019 - Aug 2021",
+        "highlights": [
+          "Developed and maintained core software solutions for the university",
+          "Led end-to-end development of globally utilized Tuition Quotation Mobile App",
+          "Optimized application performance for lower-end devices",
+          "Debugged and resolved complex compatibility issues across Android versions"
+        ]
+      }
+    }
+  },
+  "education": {
+    "title": "Education",
+    "items": {
+      "master": {
+        "degree": "Master of Engineering in Software Engineering",
+        "university": "National University of Loja",
+        "period": "Aug 2022 - Jun 2023"
+      },
+      "bachelor": {
+        "degree": "Bachelor of Science in Systems Engineering and Computing",
+        "university": "Private Technical University of Loja (UTPL)",
+        "period": "Apr 2021",
+        "award": "Best Student Award (2020)"
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "core": "Core Competencies",
+    "languages": "Languages & Tools",
+    "spoken": "Spoken Languages"
+  },
+  "stats": {
+    "workHours": "Work Hours",
+    "projectsCompleted": "Projects Completed",
+    "satisfiedClients": "Satisfied Clients",
+    "awards": "Awards & Recognition"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's Work Together",
+    "phone": "+593 97 860 0824",
+    "email": "jeanpaulmosquera1996@gmail.com"
+  },
+  "footer": {
+    "copyright": "© 2024 Jean Paul Mosquera. All rights reserved."
+  }
+}
