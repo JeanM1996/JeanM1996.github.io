@@ -1,15 +1,21 @@
 jQuery(document).ready(function() {
+    let typedInstance = null;
+    
     function initTyped() {
-        $(".typed").typed({
+        // Destroy existing instance if it exists
+        if (typedInstance) {
+            typedInstance.destroy();
+        }
+        
+        // Create new instance
+        typedInstance = $(".typed").typed({
             stringsElement: $('.typed-strings'),
             typeSpeed: 100,
             backDelay: 500,
             loop: true,
-            contentType: 'html', // or text
-            // defaults to false for infinite loop
+            contentType: 'html',
             loopCount: false,
-            callback: function () { null; },
-            resetCallback: function () { initTyped(); }
+            callback: function () { null; }
         });
     }
     
@@ -21,13 +27,6 @@ jQuery(document).ready(function() {
     
     // Reinitialize when translations are updated
     document.addEventListener('translationsUpdated', function() {
-        // Destroy existing typed instances
-        $(".typed").each(function() {
-            if ($(this).data('typed')) {
-                $(this).data('typed').destroy();
-            }
-        });
-        // Reinitialize
         setTimeout(initTyped, 100);
     });
 });

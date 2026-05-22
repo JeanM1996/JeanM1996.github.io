@@ -150,11 +150,11 @@
                     typedStringsElement.innerHTML = roles.map(role => `<p>${role}</p>`).join('');
                     
                     // Reinitialize typed.js if it exists
-                    if (typeof Typed !== 'undefined') {
+                    if (typeof $ !== 'undefined' && typeof Typed !== 'undefined') {
                         // Check if there's an existing Typed instance and destroy it
                         const typedElement = document.querySelector('.typed');
-                        if (typedElement && typedElement.data('typed')) {
-                            typedElement.data('typed').destroy();
+                        if (typedElement && $(typedElement).data('typed')) {
+                            $(typedElement).data('typed').destroy();
                         }
                         
                         // Reinitialize typed.js
