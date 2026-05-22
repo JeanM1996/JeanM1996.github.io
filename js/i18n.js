@@ -140,11 +140,18 @@
         
         setupLanguageSwitcher() {
             const langToggle = document.getElementById('lang-toggle');
+            const langText = document.getElementById('lang-text');
+            
             if (langToggle) {
+                // Set initial button text
+                langText.textContent = this.currentLanguage === 'es' ? 'EN' : 'ES';
+                
                 langToggle.addEventListener('click', (e) => {
                     e.preventDefault();
                     const newLang = this.currentLanguage === 'es' ? 'en' : 'es';
                     this.setLanguage(newLang);
+                    // Update button text
+                    langText.textContent = newLang === 'es' ? 'EN' : 'ES';
                 });
             }
         }
