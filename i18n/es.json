@@ -9,11 +9,11 @@
     "language": "Idioma"
   },
   "hero": {
-    "greeting": "Hola, soy Jean Mosquera",
+    "greeting": "Hola, Soy Jean Mosquera",
     "titles": [
       "Ingeniero de Software",
-      "Desarrollador Móvil",
-      "Líder Técnico",
+      "Desarrollador de apps",
+      "Investigador",
       "Innovador"
     ],
     "cta": "Contactarme"
@@ -21,109 +21,86 @@
   "about": {
     "title": "Acerca de mí",
     "subtitle": "Bienvenido",
-    "intro": "Soy Ingeniero de Software y Desarrollador Móvil con más de cinco años de experiencia, especializado en el desarrollo de aplicaciones nativas Android y aplicaciones híbridas Flutter. Como líder técnico, me enfoco en liderar iniciativas de reingeniería arquitectónica, establecer estándares de arquitectura limpia e implementar procesos automatizados para optimizar el ciclo de desarrollo. Mi experiencia abarca gestión de proyectos, ciencia de datos y tecnología blockchain.",
+    "intro": "Soy Jean Paul Mosquera Arevalo, Ingeniero de Software, desarrollador de aplicaciones, innovador e investigador. En este sitio web encontrarás mis trabajos e información de interés que te permita darme una oportunidad en tus proyectos y ofertas laborales.",
+    "skillsHeader": "Habilidades Técnicas",
     "skills": {
-      "flutter": "Aplicaciones Flutter",
       "android": "Android Nativo",
-      "architecture": "Arquitectura Limpia",
-      "cicd": "CI/CD y DevOps",
-      "dataScience": "Ciencia de Datos",
-      "blockchain": "Blockchain"
+      "dataScience": "Data Science",
+      "flutter": "Flutter Apps",
+      "webApps": "Web Apps",
+      "design": "Diseño",
+      "blockchain": "Blockchain y Otras Tecnologías"
     }
   },
   "services": {
     "title": "Servicios",
-    "subtitle": "Cómo puedo ayudarte",
-    "items": {
-      "mobileAndroid": {
-        "title": "Desarrollo Android Nativo",
-        "description": "Desarrollo experto de aplicaciones Android de alto rendimiento con patrones arquitectónicos modernos"
-      },
-      "flutter": {
-        "title": "Aplicaciones Multiplataforma con Flutter",
-        "description": "Crea hermosas y rápidas aplicaciones para iOS y Android desde una única base de código con Flutter"
-      },
-      "webApps": {
-        "title": "Desarrollo de Aplicaciones Web",
-        "description": "Construye aplicaciones web responsivas y dinámicas con marcos y tecnologías modernas"
-      },
-      "architecture": {
-        "title": "Arquitectura Limpia y Diseño",
-        "description": "Establece estándares arquitectónicos escalables y mejores prácticas para proyectos empresariales"
-      },
-      "cicd": {
-        "title": "Implementación de Pipelines CI/CD",
-        "description": "Automatiza tu ciclo de vida de desarrollo con herramientas y prácticas CI/CD modernas"
-      },
-      "consulting": {
-        "title": "Consultoría Técnica",
-        "description": "Orientación experta en estrategia tecnológica, arquitectura y transformación digital"
-      }
+    "subtitle": "Puedo ayudarte con",
+    "android": {
+      "title": "Desarrollo de aplicaciones móviles android",
+      "description": "Experiencia en desarrollo de aplicaciones nativas android"
+    },
+    "flutter": {
+      "title": "Desarrollo de Apps Híbridas con Flutter",
+      "description": "Experiencia y Conocimientos de Flutter para desarrollo de Apps Android y iOS"
+    },
+    "webApps": {
+      "title": "Desarrollo de Web Apps",
+      "description": "Experiencia y conocimiento en HTML, CSS, Javascript, y el framework ReactJS"
+    },
+    "prototypes": {
+      "title": "Desarrollo de prototipos",
+      "description": "Elaboración de prototipos mediante los cuales puedas validar tus ideas de negocio"
+    },
+    "tutoring": {
+      "title": "Tutorías",
+      "description": "Tutorías en diversas materias relacionadas con Programación, Matemática y otras materias."
+    },
+    "projects": {
+      "title": "Proyectos",
+      "description": "Puedo participar en proyectos de forma activa"
     }
   },
   "portfolio": {
     "title": "Portafolio",
-    "subtitle": "Proyectos destacados y publicaciones",
+    "subtitle": "Aquí algunos de mis desarrollos y publicaciones",
     "filters": {
       "all": "Todos",
       "mobile": "Aplicaciones Móviles",
       "web": "Aplicaciones Web",
       "publications": "Publicaciones"
-    }
-  },
-  "experience": {
-    "title": "Experiencia Profesional",
-    "items": {
-      "tres": {
-        "position": "Desarrollador Senior/Líder Flutter",
-        "company": "Tres Astronautas",
-        "period": "Jul 2021 - Presente",
-        "highlights": [
-          "Líder del equipo Flutter supervisando el desarrollo integral de aplicaciones web y móviles",
-          "Entregué más de 40 proyectos de nivel empresarial para clientes como Rentandes y Finandina",
-          "Lideré la reingeniería del ciclo de vida de desarrollo móvil con Arquitectura Limpia y automatización CI/CD",
-          "Colaboré con stakeholders para transformar requisitos empresariales en características digitales intuitivas"
-        ]
+    },
+    "projects": [
+      {
+        "title": "Calculadora de Matrícula UTPL",
+        "subtitle": "App Nativa Android",
+        "url": "https://play.google.com/store/apps/details?id=jpmosquera.calculadorutpl"
       },
-      "freelance": {
-        "position": "Desarrollador Android/Flutter",
-        "company": "Freelance",
-        "period": "2017 - 2021",
-        "highlights": [
-          "Desarrollo independiente de aplicaciones móviles propietarias publicadas en Google Play Store",
-          "Creé tres aplicaciones móviles exitosas con más de 5,000 descargas combinadas",
-          "Colaboré con el Grupo de Investigación de Software de UTPL en aplicaciones de recopilación de datos",
-          "Impulsé iniciativas de transformación digital para múltiples negocios"
-        ]
+      {
+        "title": "Dónde Votar Ecuador 2020",
+        "subtitle": "App Nativa Android",
+        "url": "https://play.google.com/store/apps/details?id=com.jpmosquera.dondevotar2019"
       },
-      "utpl": {
-        "position": "Desarrollador Móvil & Técnico de Proyecto",
-        "company": "Universidad Técnica Particular de Loja (UTPL)",
-        "period": "Abr 2019 - Ago 2021",
-        "highlights": [
-          "Desarrollé y mantuve soluciones de software clave para la universidad",
-          "Lideré el desarrollo integral de la Aplicación Móvil de Cotización de Matrícula utilizada globalmente",
-          "Optimicé el rendimiento de la aplicación para dispositivos de gama baja",
-          "Depuré y resolví problemas complejos de compatibilidad entre versiones de Android"
-        ]
+      {
+        "title": "Te mueve",
+        "subtitle": "App iOS/Android",
+        "url": "https://appadvice.com/app/te-mueve/1573785522"
+      },
+      {
+        "title": "Portal Clientes Rentandes",
+        "subtitle": "App iOS/Android",
+        "url": "https://www.tresastronautas.com/es/our-clients/rentandes---tech"
+      },
+      {
+        "title": "Barhoop",
+        "subtitle": "App iOS/Android",
+        "url": "https://play.google.com/store/apps/details?id=com.barhop.users&pli=1"
+      },
+      {
+        "title": "MediAviso - Recordatorio de medicamentos",
+        "subtitle": "Flutter App",
+        "url": "https://play.google.com/store/apps/details?id=com.jpmosquera.mediaviso"
       }
-    }
-  },
-  "education": {
-    "title": "Educación",
-    "items": {
-      "master": {
-        "degree": "Maestría en Ingeniería de Software",
-        "university": "Universidad Nacional de Loja",
-        "period": "Ago 2022 - Jun 2023"
-      },
-      "bachelor": {
-        "degree": "Licenciatura en Ingeniería de Sistemas y Computación",
-        "university": "Universidad Técnica Particular de Loja (UTPL)",
-        "period": "Abr 2021",
-        "award": "Premio al Mejor Estudiante (2020)"
-      }
-    }
+    ]
   },
   "skills": {
     "title": "Habilidades Técnicas",
