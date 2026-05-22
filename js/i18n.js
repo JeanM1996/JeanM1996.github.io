@@ -88,8 +88,29 @@
                 const key = element.getAttribute('data-i18n');
                 const translation = this.t(key);
                 
-                // Update element text content
-                element.textContent = translation;
+                // For elements with nested markup, update only text content
+                // This works because we only translate text nodes, not the HTML structure
+                let hasNesting = element.querySelector('*') !== null;
+                
+                if (hasNesting) {
+                    // For elements with children (like nav links with <span>), 
+                    // replace only the direct text node
+                    let found = false;
+                    for (let i = 0; i < element.childNodes.length; i++) {
+                        if (element.childNodes[i].nodeType === 3) { // TEXT_NODE
+                            element.childNodes[i].textContent = translation;
+                            found = true;
+                            break;
+                        }
+                    }
+                    // If no text node exists, prepend the translation as text
+                    if (!found) {
+                        element.insertBefore(document.createTextNode(translation), element.firstChild);
+                    }
+                } else {
+                    // For simple elements, just update textContent
+                    element.textContent = translation;
+                }
             });
             
             // Update language switcher text
