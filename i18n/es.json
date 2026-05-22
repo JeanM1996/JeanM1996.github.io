@@ -6,6 +6,7 @@
     "services": "Servicios",
     "portfolio": "Portafolio",
     "experience": "Experiencia",
+    "contact": "Contacto",
     "language": "Idioma"
   },
   "hero": {
@@ -16,7 +17,9 @@
       "Investigador",
       "Innovador"
     ],
-    "cta": "Contactarme"
+    "cta": "Contactarme",
+    "viewWork": "Ver mi trabajo",
+    "available": "Disponible para nuevos proyectos"
   },
   "about": {
     "title": "Acerca de mí",
@@ -114,6 +117,50 @@
     "design": "Diseño",
     "blockchain": "Blockchain y Otras Tecnologías"
   },
+  "testimonials": {
+    "title": "Testimonios",
+    "subtitle": "Lo que dicen de mi trabajo",
+    "q1": {
+      "quote": "Jean entendió nuestro negocio antes que el código. Entregó una solución que nuestros clientes adoptaron desde el primer día — no es solo un buen ingeniero, piensa como un socio de negocio.",
+      "name": "John",
+      "role": "CEO · Gestión Financiera"
+    },
+    "q2": {
+      "quote": "Trabajar con Jean es trabajar con un par, no con un proveedor. Nivel técnico, atención al detalle y capacidad para comunicar trade-offs claramente: nos ahorró incidentes y tiempo en producción.",
+      "name": "Daniel Soto",
+      "role": "CTO · TresAstronautas"
+    },
+    "q3": {
+      "quote": "Jean fue uno de los estudiantes más rigurosos que tuve en la maestría. Combina pensamiento crítico, fundamentos sólidos y la disciplina, poco común, de llevar las ideas hasta implementación.",
+      "name": "Ing. Luis Chamba",
+      "role": "Director Maestría en Software · UNL"
+    }
+  },
+  "process": {
+    "title": "Proceso",
+    "subtitle": "Cómo trabajamos juntos",
+    "lead": "Un flujo simple y transparente para ir de la idea al producto sin perder claridad en el camino.",
+    "step1": {
+      "title": "Discovery call",
+      "description": "30 min para entender tu idea, audiencia y objetivos. Sin costo, sin compromiso.",
+      "time": "~ Día 1"
+    },
+    "step2": {
+      "title": "Propuesta y plan",
+      "description": "Recibes alcance, timeline, hitos y costo en menos de 48 h. Si encajamos, firmamos y arrancamos.",
+      "time": "~ 24-48 h"
+    },
+    "step3": {
+      "title": "Sprints semanales",
+      "description": "Demo todos los viernes. Tú validas, yo itero. Acceso al repo y al board desde el día uno.",
+      "time": "2 - 8 semanas"
+    },
+    "step4": {
+      "title": "Lanzamiento",
+      "description": "Despliegue a stores o producción, handover técnico y soporte post-launch de 2 semanas.",
+      "time": "Día final + 2 sem."
+    }
+  },
   "stats": {
     "workHours": "Horas de Trabajo",
     "projectsCompleted": "Proyectos Completados",
@@ -123,11 +170,58 @@
   "contact": {
     "title": "Ponte en Contacto",
     "subtitle": "Trabajemos Juntos",
+    "lead": "Envíame un mensaje y lo recibiré directamente en mi WhatsApp.",
     "phone": "+593 97 860 0824",
-    "email": "jeanpaulmosquera1996@gmail.com"
+    "email": "jeanpaulmosquera1996@gmail.com",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo (opcional)",
+      "emailPlaceholder": "tu@correo.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "¿De qué quieres hablar?",
+      "budget": "Presupuesto estimado",
+      "budgetPlaceholder": "Selecciona un rango",
+      "budget1": "Menos de $500",
+      "budget2": "$500 – $2.000",
+      "budget3": "$2.000 – $10.000",
+      "budget4": "$10.000 – $30.000",
+      "budget5": "Más de $30.000",
+      "budget6": "Aún no lo sé",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame sobre tu proyecto...",
+      "submit": "Enviar por WhatsApp",
+      "disclaimer": "Se abrirá WhatsApp con tu mensaje listo para enviar.",
+      "whatsapp": "WhatsApp"
+    },
+    "info": {
+      "whatsapp": "WhatsApp",
+      "email": "Email"
+    },
+    "intent": {
+      "label": "¿Qué necesitas?",
+      "app": "App móvil",
+      "web": "Web / dashboard",
+      "mvp": "MVP / prototipo",
+      "consulting": "Consultoría"
+    }
   },
   "footer": {
-    "copyright": "© 2024 Jean Paul Mosquera. Todos los derechos reservados."
+    "copyright": "© 2026 Jean Paul Mosquera. Todos los derechos reservados.",
+    "tagline": "Construyo apps móviles, web y prototipos que las personas realmente usan.",
+    "cta": "Hablemos",
+    "explore": "Explora",
+    "connect": "Conecta",
+    "workWithMe": "Trabajemos",
+    "madeWith": "Diseñado y construido con ❤️ por Jean",
+    "waTooltip": "¡Hablemos por WhatsApp!",
+    "trust": {
+      "response": "Respondo en menos de 24h",
+      "availability": "Disponibilidad este mes",
+      "call": "Llamada intro gratis · 30 min",
+      "location": "Remoto · Loja, Ecuador",
+      "book": "Agendar llamada"
+    }
   },
   "heroSection": {
     "greeting": "Hola, Soy Jean Mosquera",

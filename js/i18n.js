@@ -54,20 +54,19 @@
             return browserLang === 'es' ? 'es' : 'en';
         },
         
-        t(key, defaultValue = key) {
+        t(key, defaultValue = null) {
             const keys = key.split('.');
             let value = this.translations[this.currentLanguage] || {};
-            
+
             for (const k of keys) {
-                // Check if value is an object before accessing properties
                 if (value && typeof value === 'object' && k in value) {
                     value = value[k];
                 } else {
                     return defaultValue;
                 }
             }
-            
-            return value !== undefined ? value : defaultValue;
+
+            return value !== undefined && value !== null ? value : defaultValue;
         },
         
         getArray(key) {
@@ -102,30 +101,39 @@
         },
         
         updatePageContent() {
-            // Update document title first
-            const titleKey = 'nav.title';
-            const titleTranslation = this.t(titleKey);
-            if (titleTranslation !== titleKey) {
+            const titleTranslation = this.t('nav.title');
+            if (titleTranslation) {
                 document.title = titleTranslation;
             }
-            
-            // Update all elements with data-i18n attribute
+
             document.querySelectorAll('[data-i18n]').forEach(element => {
+                if (element.tagName === 'TITLE') return;
+
                 const key = element.getAttribute('data-i18n');
-                const translation = this.t(key);
-                
-                // Skip title elements as they were handled above
-                if (element.tagName === 'TITLE') {
-                    return;
+                const hasChildElements = element.querySelector('*') !== null;
+
+                // Cache the original HTML default once so we can fall back
+                // to it when a translation is missing.
+                if (!element.hasAttribute('data-i18n-default')) {
+                    let original = '';
+                    if (hasChildElements) {
+                        for (let i = 0; i < element.childNodes.length; i++) {
+                            const node = element.childNodes[i];
+                            if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
+                                original = node.textContent.trim();
+                                break;
+                            }
+                        }
+                    } else {
+                        original = element.textContent.trim();
+                    }
+                    element.setAttribute('data-i18n-default', original);
                 }
-                
-                // For elements with nested markup, update only text content
-                // This works because we only translate text nodes, not the HTML structure
-                let hasChildElements = element.querySelector('*') !== null;
-                
+
+                const fallback = element.getAttribute('data-i18n-default') || '';
+                const translation = this.t(key, fallback);
+
                 if (hasChildElements) {
-                    // For elements with children (like nav links with <span>), 
-                    // replace only the direct text node
                     let found = false;
                     for (let i = 0; i < element.childNodes.length; i++) {
                         if (element.childNodes[i].nodeType === Node.TEXT_NODE) {
@@ -134,48 +142,41 @@
                             break;
                         }
                     }
-                    // If no text node exists, prepend the translation as text
                     if (!found) {
                         element.insertBefore(document.createTextNode(translation), element.firstChild);
                     }
                 } else {
-                    // For simple elements, just update textContent
                     element.textContent = translation;
                 }
             });
-            
-            // Update hero section typed strings
+
+            // Update placeholders / values on form inputs
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(element => {
+                const key = element.getAttribute('data-i18n-placeholder');
+                if (!element.hasAttribute('data-i18n-placeholder-default')) {
+                    element.setAttribute('data-i18n-placeholder-default', element.getAttribute('placeholder') || '');
+                }
+                const fallback = element.getAttribute('data-i18n-placeholder-default') || '';
+                element.setAttribute('placeholder', this.t(key, fallback));
+            });
+
             this.updateTypedStrings();
-            
-            // Dispatch custom event
+
             document.dispatchEvent(new CustomEvent('translationsUpdated', {
                 detail: { language: this.currentLanguage }
             }));
         },
         
         updateTypedStrings() {
-            // Update the typed strings element with translated roles
             const typedStringsElement = document.getElementById('typed-strings');
-            if (typedStringsElement) {
-                const roles = this.getArray('heroSection.roles');
-                if (roles.length > 0) {
-                    typedStringsElement.innerHTML = roles.map(role => `<p>${role}</p>`).join('');
-                    
-                    // Reinitialize typed.js if it exists
-                    if (typeof $ !== 'undefined' && typeof Typed !== 'undefined') {
-                        // Check if there's an existing Typed instance and destroy it
-                        const typedElement = document.querySelector('.typed');
-                        if (typedElement && $(typedElement).data('typed')) {
-                            $(typedElement).data('typed').destroy();
-                        }
-                        
-                        // Reinitialize typed.js
-                        if (typeof newTyped === 'function') {
-                            newTyped();
-                        }
-                    }
-                }
+            if (!typedStringsElement) return;
+            const roles = this.getArray('heroSection.roles');
+            if (roles.length > 0) {
+                typedStringsElement.innerHTML = roles
+                    .map(role => `<p>${role}</p>`)
+                    .join('');
             }
+            // typed-custom.js listens for `translationsUpdated` and reinits.
         },
         
         setupLanguageSwitcher() {

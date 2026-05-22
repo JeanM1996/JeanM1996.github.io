@@ -6,6 +6,7 @@
     "services": "Services",
     "portfolio": "Portfolio",
     "experience": "Experience",
+    "contact": "Contact",
     "language": "Language"
   },
   "hero": {
@@ -16,7 +17,9 @@
       "Researcher",
       "Innovator"
     ],
-    "cta": "Get In Touch"
+    "cta": "Get In Touch",
+    "viewWork": "See my work",
+    "available": "Open for new projects"
   },
   "about": {
     "title": "About Me",
@@ -114,6 +117,50 @@
     "design": "Design",
     "blockchain": "Blockchain and Other Technologies"
   },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "What people say about my work",
+    "q1": {
+      "quote": "Jean understood our business before the code. He shipped a solution our clients adopted from day one — he's not just a great engineer, he thinks like a business partner.",
+      "name": "John",
+      "role": "CEO · Gestión Financiera"
+    },
+    "q2": {
+      "quote": "Working with Jean is working with a peer, not a vendor. Technical skill, attention to detail and the ability to communicate trade-offs clearly: he saved us incidents and production time.",
+      "name": "Daniel Soto",
+      "role": "CTO · TresAstronautas"
+    },
+    "q3": {
+      "quote": "Jean was one of the most rigorous students I had in the master's program. He combines critical thinking, solid fundamentals and the rare discipline of carrying ideas through to implementation.",
+      "name": "Ing. Luis Chamba",
+      "role": "Director, Software Master's · UNL"
+    }
+  },
+  "process": {
+    "title": "Process",
+    "subtitle": "How we'll work together",
+    "lead": "A simple, transparent flow to go from idea to product without losing clarity along the way.",
+    "step1": {
+      "title": "Discovery call",
+      "description": "30 min to understand your idea, audience and goals. Free, no strings attached.",
+      "time": "~ Day 1"
+    },
+    "step2": {
+      "title": "Proposal & plan",
+      "description": "You receive scope, timeline, milestones and pricing in under 48 h. If we click, we sign and start.",
+      "time": "~ 24-48 h"
+    },
+    "step3": {
+      "title": "Weekly sprints",
+      "description": "Demo every Friday. You validate, I iterate. Repo and board access from day one.",
+      "time": "2 - 8 weeks"
+    },
+    "step4": {
+      "title": "Launch",
+      "description": "Store / production deployment, technical handover and 2 weeks of post-launch support.",
+      "time": "Final day + 2 wk"
+    }
+  },
   "stats": {
     "workHours": "Work Hours",
     "projectsCompleted": "Projects Completed",
@@ -123,11 +170,58 @@
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Let's Work Together",
+    "lead": "Send me a message and I'll get it straight to my WhatsApp.",
     "phone": "+593 97 860 0824",
-    "email": "jeanpaulmosquera1996@gmail.com"
+    "email": "jeanpaulmosquera1996@gmail.com",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email (optional)",
+      "emailPlaceholder": "you@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "What would you like to talk about?",
+      "budget": "Estimated budget",
+      "budgetPlaceholder": "Pick a range",
+      "budget1": "Under $500",
+      "budget2": "$500 – $2,000",
+      "budget3": "$2,000 – $10,000",
+      "budget4": "$10,000 – $30,000",
+      "budget5": "More than $30,000",
+      "budget6": "Not sure yet",
+      "message": "Message",
+      "messagePlaceholder": "Tell me about your project...",
+      "submit": "Send via WhatsApp",
+      "disclaimer": "WhatsApp will open with your message ready to send.",
+      "whatsapp": "WhatsApp"
+    },
+    "info": {
+      "whatsapp": "WhatsApp",
+      "email": "Email"
+    },
+    "intent": {
+      "label": "What do you need?",
+      "app": "Mobile app",
+      "web": "Web / dashboard",
+      "mvp": "MVP / prototype",
+      "consulting": "Consulting"
+    }
   },
   "footer": {
-    "copyright": "© 2024 Jean Paul Mosquera. All rights reserved."
+    "copyright": "© 2026 Jean Paul Mosquera. All rights reserved.",
+    "tagline": "I build mobile apps, web tools and prototypes people actually use.",
+    "cta": "Let's talk",
+    "explore": "Explore",
+    "connect": "Connect",
+    "workWithMe": "Work with me",
+    "madeWith": "Designed and built with ❤️ by Jean",
+    "waTooltip": "Let's chat on WhatsApp!",
+    "trust": {
+      "response": "I reply in under 24h",
+      "availability": "Open slots this month",
+      "call": "Free intro call · 30 min",
+      "location": "Remote · Loja, Ecuador",
+      "book": "Book a call"
+    }
   },
   "heroSection": {
     "greeting": "Hello, I'm Jean Mosquera",

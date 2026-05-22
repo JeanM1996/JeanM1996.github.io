@@ -10,6 +10,17 @@
         content="flutter, android, developer, mobile, ingeniero de software, jean mosquera, loja, ecuador">
     <meta name="author" content="Jean Paul Mosquera Arevalo">
 
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jean Mosquera — Senior Flutter & Software Engineer">
+    <meta property="og:description" content="Ingeniero de Software, desarrollador de aplicaciones móviles y web. Apps Android nativas, Flutter, React, prototipos y publicaciones académicas.">
+    <meta property="og:image" content="https://jeanmosquera.com/images/misc/pic-profile-1.jpg">
+    <meta property="og:url" content="https://jeanmosquera.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jean Mosquera — Senior Flutter & Software Engineer">
+    <meta name="twitter:description" content="Ingeniero de Software · Desarrollador Móvil · Investigador">
+    <meta name="twitter:image" content="https://jeanmosquera.com/images/misc/pic-profile-1.jpg">
+
     <!--[if lt IE 9]>
 	<script src="js/html5shiv.js"></script>
 	<![endif]-->
@@ -37,9 +48,22 @@
     <!-- color scheme -->
     <link rel="stylesheet" href="css/colors/scheme-5.css" type="text/css">
     <meta name="facebook-domain-verification" content="sw9tj8en7mbexnc1z78j3aoa8x9ygy" />
+    <!-- Apply theme before paint to avoid flash -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('theme');
+                var theme = saved === 'dark' || saved === 'light' ? saved :
+                    (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+                document.documentElement.setAttribute('data-theme', theme);
+            } catch (e) {}
+        })();
+    </script>
 </head>
 
 <body id="homepage">
+
+    <div id="scroll-progress" aria-hidden="true"></div>
 
     <div id="wrapper">
 
@@ -69,12 +93,35 @@
                                 <li><a href="#section-about" data-i18n="nav.about">Acerca de mi<span></span></a></li>
                                 <li><a href="#section-services" data-i18n="nav.services">Servicios<span></span></a></li>
                                 <li><a href="#section-portfolio" data-i18n="nav.portfolio">Portafolio<span></span></a></li>
+                                <li><a href="#section-contact" data-i18n="nav.contact">Contacto<span></span></a></li>
+                                <li class="theme-toggle-wrap">
+                                    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false">
+                                        <i class="fas fa-sun theme-toggle__sun"></i>
+                                        <i class="fas fa-moon theme-toggle__moon"></i>
+                                    </button>
+                                </li>
                                 <li id="language-switcher" class="language-switcher">
                                     <button id="lang-es" class="lang-btn lang-btn-active" data-lang="es" type="button" title="Español" aria-label="Cambiar a Español">
-                                        <span>ES</span>
+                                        <span class="lang-flag" aria-hidden="true">
+                                            <svg viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="60" height="40" fill="#AA151B"/>
+                                                <rect y="10" width="60" height="20" fill="#F1BF00"/>
+                                            </svg>
+                                        </span>
+                                        <span class="lang-code">ES</span>
                                     </button>
                                     <button id="lang-en" class="lang-btn" data-lang="en" type="button" title="English" aria-label="Change to English">
-                                        <span>EN</span>
+                                        <span class="lang-flag" aria-hidden="true">
+                                            <svg viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                                                <clipPath id="uk-cross"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+                                                <rect width="60" height="30" fill="#012169"/>
+                                                <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+                                                <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#uk-cross)" stroke="#C8102E" stroke-width="4"/>
+                                                <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+                                                <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                                            </svg>
+                                        </span>
+                                        <span class="lang-code">EN</span>
                                     </button>
                                 </li>
                             </ul>
@@ -103,7 +150,11 @@
                                 <div class="col-md-8 col-md-offset-2">
                                     <div class="spacer-double"></div>
                                     <img src="images/misc/pic-profile-1.jpg" class="img-profile img-circle" alt="">
-                                    <div class="spacer-double"></div>
+                                    <div class="hero-availability">
+                                        <span class="hero-availability__pulse" aria-hidden="true"></span>
+                                        <span data-i18n="hero.available">Disponible para nuevos proyectos</span>
+                                    </div>
+                                    <div class="spacer-single"></div>
                                     <h1 class="big" data-i18n="heroSection.greeting">Hola, Soy Jean Mosquera</h1>
                                     <div class="h2_s1 text-white mt10">
                                         <div class="typed-strings" id="typed-strings">
@@ -114,6 +165,16 @@
                                         </div>
                                         <div class="typed"></div>
                                     </div>
+                                    <div class="hero-cta-wrap">
+                                        <a href="#section-contact" class="hero-cta">
+                                            <i class="fas fa-paper-plane"></i>
+                                            <span data-i18n="hero.cta">Contactarme</span>
+                                        </a>
+                                        <a href="https://github.com/JeanM1996" target="_blank" rel="noopener" class="hero-cta hero-cta--ghost">
+                                            <i class="fab fa-github"></i>
+                                            <span data-i18n="hero.viewWork">Ver mi trabajo</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -123,80 +184,91 @@
             <!-- section close -->
 
 
-            <!-- section begin -->
+            <!-- about section -->
             <section id="section-about">
                 <div class="container relative">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h5><span class="id-color" data-i18n="about.title">Acerca de mi</span></h5>
+                            <h5><span class="id-color" data-i18n="about.title">Acerca de mí</span></h5>
                             <h2 data-i18n="about.subtitle">Bienvenido</h2>
                         </div>
                         <div class="col-md-8 col-md-offset-2 text-center">
-                            <p data-i18n="about.intro">Soy Jean Paul Mosquera Arevalo,Ingeniero de Software, desarrollador de aplicaciones,
-                                innovador e investigador,
-                                en este sitio web encontraras mis trabajos e información de interes que te permita darme
-                                una oportunidad
-                                en tus proyectos y ofertas laborales</p>
+                            <p class="about-intro" data-i18n="about.intro">Soy Jean Paul Mosquera Arevalo, Ingeniero de Software, desarrollador de aplicaciones, innovador e investigador. En este sitio web encontrarás mis trabajos e información de interés que te permita darme una oportunidad en tus proyectos y ofertas laborales.</p>
                         </div>
                     </div>
 
-                    <div class="spacer-single"></div>
-
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="skill-bar style-2">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-accent="green">
+                            <div class="skill-card__head">
+                                <div class="skill-card__icon"><i class="fab fa-android"></i></div>
                                 <h5 data-i18n="skills.android">Android Nativo</h5>
-                                <div class="de-progress">
-                                    <div class="value"></div>
-                                    <div class="progress-bar" data-value="90%">
-                                    </div>
-                                </div>
                             </div>
-
                             <div class="skill-bar style-2">
-                                <h5 data-i18n="skills.dataScience">Data Science</h5>
                                 <div class="de-progress">
                                     <div class="value"></div>
-                                    <div class="progress-bar" data-value="70%">
-                                    </div>
+                                    <div class="progress-bar" data-value="90%"></div>
                                 </div>
                             </div>
-
                         </div>
 
-                        <div class="col-md-4">
-                            <div class="skill-bar style-2">
+                        <div class="skill-card" data-accent="cyan">
+                            <div class="skill-card__head">
+                                <div class="skill-card__icon"><i class="fas fa-mobile-alt"></i></div>
                                 <h5 data-i18n="skills.flutter">Flutter Apps</h5>
-                                <div class="de-progress">
-                                    <div class="value"></div>
-                                    <div class="progress-bar" data-value="95%">
-                                    </div>
-                                </div>
                             </div>
-
                             <div class="skill-bar style-2">
-                                <h5 data-i18n="skills.webApps">Web Apps</h5>
                                 <div class="de-progress">
                                     <div class="value"></div>
-                                    <div class="progress-bar" data-value="50%">
-                                    </div>
+                                    <div class="progress-bar" data-value="95%"></div>
                                 </div>
                             </div>
-
                         </div>
 
-                        <div class="col-md-4">
+                        <div class="skill-card" data-accent="purple">
+                            <div class="skill-card__head">
+                                <div class="skill-card__icon"><i class="fas fa-code"></i></div>
+                                <h5 data-i18n="skills.webApps">Web Apps</h5>
+                            </div>
                             <div class="skill-bar style-2">
-                                <h5 data-i18n="skills.design">Diseño</h5>
                                 <div class="de-progress">
                                     <div class="value"></div>
-                                    <div class="progress-bar" data-value="70%">
-                                    </div>
+                                    <div class="progress-bar" data-value="50%"></div>
                                 </div>
                             </div>
+                        </div>
 
+                        <div class="skill-card" data-accent="orange">
+                            <div class="skill-card__head">
+                                <div class="skill-card__icon"><i class="fas fa-chart-line"></i></div>
+                                <h5 data-i18n="skills.dataScience">Data Science</h5>
+                            </div>
                             <div class="skill-bar style-2">
-                                <h5 data-i18n="skills.blockchain">Blockchain y Otras Tecnologias</h5>
+                                <div class="de-progress">
+                                    <div class="value"></div>
+                                    <div class="progress-bar" data-value="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-accent="pink">
+                            <div class="skill-card__head">
+                                <div class="skill-card__icon"><i class="fas fa-palette"></i></div>
+                                <h5 data-i18n="skills.design">Diseño</h5>
+                            </div>
+                            <div class="skill-bar style-2">
+                                <div class="de-progress">
+                                    <div class="value"></div>
+                                    <div class="progress-bar" data-value="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-accent="blue">
+                            <div class="skill-card__head">
+                                <div class="skill-card__icon"><i class="fas fa-cube"></i></div>
+                                <h5 data-i18n="skills.blockchain">Blockchain y Otras Tecnologías</h5>
+                            </div>
+                            <div class="skill-bar style-2">
                                 <div class="de-progress">
                                     <div class="value"></div>
                                     <div class="progress-bar" data-value="75%">
@@ -210,304 +282,358 @@
             </section>
             <!-- section close -->
 
-            <!-- section begin -->
-            <section id="section-services" class="no-top no-bottom text-light index-2"
-                data-stellar-background-ratio=".2">
-                <div class="overlay-solid">
-                    <div class="overlay-bg t70">
-                        <div class="container">
-
-                            <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <h5><span class="id-color" data-i18n="services.title">Servicios</span></h5>
-                                    <h2 data-i18n="services.subtitle">Puedo ayudarte con</h2>
-
-                                    <div id="carousel-3" class="sequence" data-anim="fadeInUp">
-
-                                        <!-- feature box begin -->
-                                        <div class="feature-box col-md-4 carousel-item sq-item wow">
-                                            <div class="inner">
-                                                <i class="icon_lightbulb_alt id-color"></i>
-                                                <div class="text">
-                                                    <h3 data-i18n="services.android.title">Desarrollo de aplicaciones moviles android</h3>
-                                                    <span data-i18n="services.android.description">Experiencia en desarrollo de aplicaciones nativas android</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- feature box close -->
-
-                                        <!-- feature box begin -->
-                                        <div class="feature-box col-md-4 carousel-item sq-item wow">
-                                            <div class="inner">
-                                                <i class="icon_datareport id-color"></i>
-                                                <div class="text">
-                                                    <h3 data-i18n="services.flutter.title">Desarrollo de Apps Hibridas con Flutter</h3>
-                                                    <span data-i18n="services.flutter.description">Experiencia y Conocimientos de Flutter para desarrollo de Apps Android y iOS</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- feature box close -->
-
-                                        <!-- feature box begin -->
-                                        <div class="feature-box col-md-4 carousel-item sq-item wow">
-                                            <div class="inner">
-                                                <i class="icon_camera_alt id-color"></i>
-                                                <div class="text">
-                                                    <h3 data-i18n="services.webApps.title">Desarrollo de Web Apps</h3>
-                                                    <span data-i18n="services.webApps.description">Experiencia y conocimiento en HTML, CSS, Javascript, y el framework ReactJS</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- feature box close -->
-
-                                        <!-- feature box begin -->
-                                        <div class="feature-box col-md-4 carousel-item sq-item wow">
-                                            <div class="inner">
-                                                <i class="icon_tag_alt id-color"></i>
-                                                <div class="text">
-                                                    <h3 data-i18n="services.prototypes.title">Desarrollo de prototipos</h3>
-                                                    <span data-i18n="services.prototypes.description">Elaboración de prototipos mediante los cuales puedas validar tus ideas de negocio</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- feature box close -->
-
-                                        <!-- feature box begin -->
-                                        <div class="feature-box col-md-4 carousel-item sq-item wow">
-                                            <div class="inner">
-                                                <i class="icon_pencil-edit id-color"></i>
-                                                <div class="text">
-                                                    <h3 data-i18n="services.tutoring.title">Tutorías</h3>
-                                                    <span data-i18n="services.tutoring.description">Tutorías en diversas materias relacionadas con Programación, Matemática y otras materias.</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- feature box close -->
-
-                                        <!-- feature box begin -->
-                                        <div class="feature-box col-md-4 carousel-item sq-item wow">
-                                            <div class="inner">
-                                                <i class="icon_search id-color"></i>
-                                                <div class="text">
-                                                    <h3 data-i18n="services.projects.title">Proyectos</h3>
-                                                    <span data-i18n="services.projects.description">Puedo participar en proyectos de forma activa</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- feature box close -->
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <!-- tech ticker -->
+            <section id="section-tech" class="tech-ticker-section" aria-label="Tech stack">
+                <div class="tech-ticker">
+                    <div class="tech-ticker__track">
+                        <span class="tech-ticker__item"><i class="fab fa-android"></i> Android</span>
+                        <span class="tech-ticker__item"><i class="fas fa-mobile-alt"></i> Flutter</span>
+                        <span class="tech-ticker__item"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-ticker__item"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-ticker__item"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-ticker__item"><i class="fas fa-database"></i> SQL / NoSQL</span>
+                        <span class="tech-ticker__item"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tech-ticker__item"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tech-ticker__item"><i class="fab fa-figma"></i> Figma</span>
+                        <span class="tech-ticker__item"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="tech-ticker__item"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-ticker__item"><i class="fas fa-code-branch"></i> CI/CD</span>
+                        <!-- duplicated set for seamless loop -->
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fab fa-android"></i> Android</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fas fa-mobile-alt"></i> Flutter</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fab fa-react"></i> React</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fab fa-js"></i> JavaScript</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fab fa-python"></i> Python</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fas fa-database"></i> SQL / NoSQL</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fab fa-node-js"></i> Node.js</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fab fa-git-alt"></i> Git</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fab fa-figma"></i> Figma</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fab fa-aws"></i> AWS</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fab fa-docker"></i> Docker</span>
+                        <span class="tech-ticker__item" aria-hidden="true"><i class="fas fa-code-branch"></i> CI/CD</span>
                     </div>
                 </div>
             </section>
-            <!-- section close -->
+
+            <!-- services section -->
+            <section id="section-services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h5><span class="id-color" data-i18n="services.title">Servicios</span></h5>
+                            <h2 data-i18n="services.subtitle">Puedo ayudarte con</h2>
+                        </div>
+                    </div>
+
+                    <div class="services-grid">
+                        <article class="service-card" data-accent="orange">
+                            <div class="service-card__icon"><i class="fab fa-android"></i></div>
+                            <h3 data-i18n="services.android.title">Desarrollo de aplicaciones móviles android</h3>
+                            <p data-i18n="services.android.description">Experiencia en desarrollo de aplicaciones nativas android</p>
+                        </article>
+
+                        <article class="service-card" data-accent="cyan">
+                            <div class="service-card__icon"><i class="fas fa-mobile-alt"></i></div>
+                            <h3 data-i18n="services.flutter.title">Desarrollo de Apps Híbridas con Flutter</h3>
+                            <p data-i18n="services.flutter.description">Experiencia y Conocimientos de Flutter para desarrollo de Apps Android y iOS</p>
+                        </article>
+
+                        <article class="service-card" data-accent="purple">
+                            <div class="service-card__icon"><i class="fas fa-code"></i></div>
+                            <h3 data-i18n="services.webApps.title">Desarrollo de Web Apps</h3>
+                            <p data-i18n="services.webApps.description">Experiencia y conocimiento en HTML, CSS, Javascript, y el framework ReactJS</p>
+                        </article>
+
+                        <article class="service-card" data-accent="pink">
+                            <div class="service-card__icon"><i class="fas fa-pencil-ruler"></i></div>
+                            <h3 data-i18n="services.prototypes.title">Desarrollo de prototipos</h3>
+                            <p data-i18n="services.prototypes.description">Elaboración de prototipos mediante los cuales puedas validar tus ideas de negocio</p>
+                        </article>
+
+                        <article class="service-card" data-accent="green">
+                            <div class="service-card__icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3 data-i18n="services.tutoring.title">Tutorías</h3>
+                            <p data-i18n="services.tutoring.description">Tutorías en diversas materias relacionadas con Programación, Matemática y otras materias.</p>
+                        </article>
+
+                        <article class="service-card" data-accent="blue">
+                            <div class="service-card__icon"><i class="fas fa-rocket"></i></div>
+                            <h3 data-i18n="services.projects.title">Proyectos</h3>
+                            <p data-i18n="services.projects.description">Puedo participar en proyectos de forma activa</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- services section close -->
 
             <!-- section begin -->
             <section id="section-portfolio">
                 <div class="container">
-
-                    <!-- portfolio filter begin -->
                     <div class="row">
-
                         <div class="col-md-12 text-center">
                             <h5><span class="id-color" data-i18n="portfolio.title">Portafolio</span></h5>
-                            <h2 data-i18n="portfolio.subtitle">Aqui algunos de mis desarrollos y publicaciones</h2>
+                            <h2 data-i18n="portfolio.subtitle">Aquí algunos de mis desarrollos y publicaciones</h2>
                         </div>
-
-                        <div class="col-md-12 text-center mt50">
-                            <ul id="filters">
-                                <li><a href="#" data-filter="*" class="selected" data-i18n="portfolio.filters.all">Todos</a></li>
-                                <li><a href="#" data-filter=".mobile" data-i18n="portfolio.filters.mobile">Aplicaciones Moviles</a></li>
-                                <li><a href="#" data-filter=".web" data-i18n="portfolio.filters.web">Aplicaciones Web</a></li>
-                                <li><a href="#" data-filter=".paper" data-i18n="portfolio.filters.publications">Publicaciones</a></li>
-                            </ul>
-
-
-
-
-                            <div id="gallery"
-                                class="gallery full-gallery de-gallery pf_full_width pf_3_cols grid sequence">
-
-                                <!-- gallery item -->
-                                <div class="item mobile gallery-item">
-                                    <div class="picframe wow">
-                                        <a
-                                            href="https://play.google.com/store/apps/details?id=jpmosquera.calculadorutpl">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Calculadora de Matricula UTPL <br> App
-                                                        Nativa Android</span>
-                                                </span>
-                                            </span>
-                                            <img src="https://play-lh.googleusercontent.com/XGIxkEENwPnO0FbWYD7usnOkSC6Yzas15STOQ8JeYiQ1q0hlJtgZkgqn0fIh5hZSLPY=w2049-h996"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- close gallery item -->
-
-                                <!-- gallery item -->
-                                <div class="item mobile gallery-item">
-                                    <div class="picframe wow">
-                                        <a
-                                            href="https://play.google.com/store/apps/details?id=com.jpmosquera.dondevotar2019">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Donde Votar Ecuador 2020 <br> App Nativa
-                                                        Android</span>
-                                                </span>
-                                            </span>
-                                            <img src="https://play-lh.googleusercontent.com/tR3yP_rz7czc6JVuaCKrLTBQnb5qU3xkL2j3Xq05qO0QTHy5sJnGMtW8MlAwExvm3f8=w2049-h996"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- close gallery item -->
-                                <div class="item mobile gallery-item">
-                                    <div class="picframe wow">
-                                        <a href="https://appadvice.com/app/te-mueve/1573785522">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Te mueve <br> App
-                                                        iOS/Android </span>
-                                                </span>
-                                            </span>
-                                            <img src="https://is3-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/7d/f7/0e/7df70e09-3468-c8cd-32ee-9f2c9133a984/255957d3-485f-4d20-b1f4-2eb385782f42_Frame_49.jpg/750x750bb.jpeg"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item mobile gallery-item">
-                                    <div class="picframe wow">
-                                        <a href="https://www.tresastronautas.com/es/our-clients/rentandes---tech">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Portal Clientes Rentandes <br> App
-                                                        iOS/Android </span>
-                                                </span>
-                                            </span>
-                                            <img src="https://cdn.prod.website-files.com/61f2daf2890912b05ba02f36/65ef84eac079eb4e8ed401a7_Video%20(1).jpg"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item mobile gallery-item">
-                                    <div class="picframe wow">
-                                        <a href="https://play.google.com/store/apps/details?id=com.barhop.users&pli=1">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Barhoop <br> App
-                                                        iOS/Android </span>
-                                                </span>
-                                            </span>
-                                            <img src="https://play-lh.googleusercontent.com/V9rfjTWBJEAeXWvZPProaq60J2uamcB3wu-in2j15V9dfEoLhjF1zMJxS1WICGAzGw0=w2560-h1440-rw"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="item mobile gallery-item">
-                                    <div class="picframe wow">
-                                        <a>
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Muchos mas proyectos<br> </span>
-                                                </span>
-                                            </span>
-                                            <img src="images/logo-dark.png" alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-
-
-                                <!-- gallery item -->
-                                <div class="item mobile gallery-item">
-                                    <div class="picframe wow">
-                                        <a
-                                            href="https://play.google.com/store/apps/details?id=com.jpmosquera.mediaviso">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">MediAviso- Recordatorio de medicamentos
-                                                        <br> Flutter App</span>
-                                                </span>
-                                            </span>
-                                            <img src="https://play-lh.googleusercontent.com/NLawojxNkSSSSbpd9WDdZPDgCGvMQW2yYy_lMUWnrtx3ZE4XVCYHdpwrxSIdkRJxX_0=w2049-h996"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- close gallery item -->
-
-
-
-
-                                <!-- gallery item -->
-                                <div class="item paper gallery-item">
-                                    <div class="picframe wow">
-                                        <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-33547-2_12">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Linked Data and Musical Information to
-                                                        Improvement the Cultural and Heritage Knowledge
-                                                        Management</span>
-                                                </span>
-                                            </span>
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2W_EYn9WYuCTrkMm5N3_ooID7o6jdEKz7w&usqp=CAU"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-
-                                <div class="item paper gallery-item">
-                                    <div class="picframe wow">
-                                        <a href="https://ieeexplore.ieee.org/abstract/document/9390126">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Methodological Framework for the
-                                                        integration of Blockchain Technology in Coffee Industy</span>
-                                                </span>
-                                            </span>
-                                            <img src="data:image/jpeg;base64,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"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- close gallery item -->
-
-                                <!-- gallery item -->
-                                <div class="item paper gallery-item">
-                                    <div class="picframe wow">
-                                        <a href="https://ieeexplore.ieee.org/document/8625618/authors#authors">
-                                            <span class="overlay">
-                                                <span class="pf_text">
-                                                    <span class="project-name">Use of Graph Database for the Integration
-                                                        of Heterogeneous Data about Ecuadorian Historical
-                                                        Personages</span>
-                                                </span>
-                                            </span>
-                                            <img src="data:image/jpeg;base64,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"
-                                                alt="" />
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- close gallery item -->
-
-
-                            </div>
-                        </div>
-                        <!-- portfolio filter close -->
-
                     </div>
 
+                    <ul id="filters" class="portfolio-filters">
+                        <li><a href="#" data-filter="*" class="selected" data-i18n="portfolio.filters.all">Todos</a></li>
+                        <li><a href="#" data-filter=".mobile" data-i18n="portfolio.filters.mobile">Aplicaciones Móviles</a></li>
+                        <li><a href="#" data-filter=".web" data-i18n="portfolio.filters.web">Aplicaciones Web</a></li>
+                        <li><a href="#" data-filter=".paper" data-i18n="portfolio.filters.publications">Publicaciones</a></li>
+                    </ul>
+
+                    <div id="gallery" class="portfolio-grid">
+                        <article class="item mobile project-card">
+                            <a class="project-card__link" target="_blank" rel="noopener"
+                                href="https://play.google.com/store/apps/details?id=jpmosquera.calculadorutpl">
+                                <div class="project-card__media">
+                                    <img loading="lazy"
+                                        src="https://play-lh.googleusercontent.com/XGIxkEENwPnO0FbWYD7usnOkSC6Yzas15STOQ8JeYiQ1q0hlJtgZkgqn0fIh5hZSLPY=w2049-h996"
+                                        alt="Calculadora de Matrícula UTPL" />
+                                </div>
+                                <div class="project-card__body">
+                                    <span class="project-card__tag">Android</span>
+                                    <h4>Calculadora de Matrícula UTPL</h4>
+                                </div>
+                                <span class="project-card__cta" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+
+
+                        <article class="item mobile project-card">
+                            <a class="project-card__link" target="_blank" rel="noopener"
+                                href="https://play.google.com/store/apps/details?id=com.jpmosquera.dondevotar2019">
+                                <div class="project-card__media">
+                                    <img loading="lazy"
+                                        src="https://play-lh.googleusercontent.com/tR3yP_rz7czc6JVuaCKrLTBQnb5qU3xkL2j3Xq05qO0QTHy5sJnGMtW8MlAwExvm3f8=w2049-h996"
+                                        alt="Dónde Votar Ecuador 2020" />
+                                </div>
+                                <div class="project-card__body">
+                                    <span class="project-card__tag">Android</span>
+                                    <h4>Dónde Votar Ecuador 2020</h4>
+                                </div>
+                                <span class="project-card__cta" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+
+                        <article class="item mobile project-card">
+                            <a class="project-card__link" target="_blank" rel="noopener"
+                                href="https://appadvice.com/app/te-mueve/1573785522">
+                                <div class="project-card__media">
+                                    <img loading="lazy"
+                                        src="https://is3-ssl.mzstatic.com/image/thumb/PurpleSource125/v4/7d/f7/0e/7df70e09-3468-c8cd-32ee-9f2c9133a984/255957d3-485f-4d20-b1f4-2eb385782f42_Frame_49.jpg/750x750bb.jpeg"
+                                        alt="Te mueve" />
+                                </div>
+                                <div class="project-card__body">
+                                    <span class="project-card__tag">iOS / Android</span>
+                                    <h4>Te mueve</h4>
+                                </div>
+                                <span class="project-card__cta" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+
+                        <article class="item mobile project-card">
+                            <a class="project-card__link" target="_blank" rel="noopener"
+                                href="https://www.tresastronautas.com/es/our-clients/rentandes---tech">
+                                <div class="project-card__media">
+                                    <img loading="lazy"
+                                        src="https://cdn.prod.website-files.com/61f2daf2890912b05ba02f36/65ef84eac079eb4e8ed401a7_Video%20(1).jpg"
+                                        alt="Portal Clientes Rentandes" />
+                                </div>
+                                <div class="project-card__body">
+                                    <span class="project-card__tag">iOS / Android</span>
+                                    <h4>Portal Clientes Rentandes</h4>
+                                </div>
+                                <span class="project-card__cta" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+
+                        <article class="item mobile project-card">
+                            <a class="project-card__link" target="_blank" rel="noopener"
+                                href="https://play.google.com/store/apps/details?id=com.barhop.users&pli=1">
+                                <div class="project-card__media">
+                                    <img loading="lazy"
+                                        src="https://play-lh.googleusercontent.com/V9rfjTWBJEAeXWvZPProaq60J2uamcB3wu-in2j15V9dfEoLhjF1zMJxS1WICGAzGw0=w2560-h1440-rw"
+                                        alt="Barhoop" />
+                                </div>
+                                <div class="project-card__body">
+                                    <span class="project-card__tag">iOS / Android</span>
+                                    <h4>Barhoop</h4>
+                                </div>
+                                <span class="project-card__cta" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+
+                        <article class="item mobile project-card">
+                            <a class="project-card__link" target="_blank" rel="noopener"
+                                href="https://play.google.com/store/apps/details?id=com.jpmosquera.mediaviso">
+                                <div class="project-card__media">
+                                    <img loading="lazy"
+                                        src="https://play-lh.googleusercontent.com/NLawojxNkSSSSbpd9WDdZPDgCGvMQW2yYy_lMUWnrtx3ZE4XVCYHdpwrxSIdkRJxX_0=w2049-h996"
+                                        alt="MediAviso" />
+                                </div>
+                                <div class="project-card__body">
+                                    <span class="project-card__tag">Flutter</span>
+                                    <h4>MediAviso — Recordatorio de medicamentos</h4>
+                                </div>
+                                <span class="project-card__cta" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+
+
+
+
+                        <article class="item paper project-card project-card--paper">
+                            <a class="project-card__link" target="_blank" rel="noopener"
+                                href="https://link.springer.com/chapter/10.1007%2F978-3-030-33547-2_12">
+                                <div class="project-card__media">
+                                    <img loading="lazy"
+                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2W_EYn9WYuCTrkMm5N3_ooID7o6jdEKz7w&usqp=CAU"
+                                        alt="Linked Data and Musical Information" />
+                                </div>
+                                <div class="project-card__body">
+                                    <span class="project-card__tag">Publication</span>
+                                    <h4>Linked Data and Musical Information to Improvement the Cultural and Heritage Knowledge Management</h4>
+                                </div>
+                                <span class="project-card__cta" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+
+                        <article class="item paper project-card project-card--paper">
+                            <a class="project-card__link" target="_blank" rel="noopener"
+                                href="https://ieeexplore.ieee.org/abstract/document/9390126">
+                                <div class="project-card__media">
+                                    <div class="project-card__placeholder" data-accent="orange">
+                                        <i class="fas fa-coffee"></i>
+                                    </div>
+                                </div>
+                                <div class="project-card__body">
+                                    <span class="project-card__tag">Publication</span>
+                                    <h4>Methodological Framework for the integration of Blockchain Technology in Coffee Industry</h4>
+                                </div>
+                                <span class="project-card__cta" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+                        <article class="item paper project-card project-card--paper">
+                            <a class="project-card__link" target="_blank" rel="noopener"
+                                href="https://ieeexplore.ieee.org/document/8625618/authors#authors">
+                                <div class="project-card__media">
+                                    <div class="project-card__placeholder" data-accent="purple">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                </div>
+                                <div class="project-card__body">
+                                    <span class="project-card__tag">Publication</span>
+                                    <h4>Use of Graph Database for the Integration of Heterogeneous Data about Ecuadorian Historical Personages</h4>
+                                </div>
+                                <span class="project-card__cta" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </article>
+                    </div>
                 </div>
-
-
             </section>
             <!-- section close -->
-            <!-- section begin -->
+
+            <!-- testimonials -->
+            <section id="section-testimonials">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h5><span class="id-color" data-i18n="testimonials.title">Testimonios</span></h5>
+                            <h2 data-i18n="testimonials.subtitle">Lo que dicen de mi trabajo</h2>
+                        </div>
+                    </div>
+
+                    <div class="testimonials-grid">
+                        <figure class="testimonial-card">
+                            <i class="fas fa-quote-left testimonial-card__mark"></i>
+                            <blockquote class="testimonial-card__quote" data-i18n="testimonials.q1.quote">
+                                Jean entendió nuestro negocio antes que el código. Entregó una solución que nuestros clientes adoptaron desde el primer día — no es solo un buen ingeniero, piensa como un socio de negocio.
+                            </blockquote>
+                            <figcaption class="testimonial-card__person">
+                                <div class="testimonial-card__avatar" aria-hidden="true">J</div>
+                                <div>
+                                    <strong data-i18n="testimonials.q1.name">John</strong>
+                                    <span data-i18n="testimonials.q1.role">CEO · Gestión Financiera</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="testimonial-card testimonial-card--featured">
+                            <i class="fas fa-quote-left testimonial-card__mark"></i>
+                            <blockquote class="testimonial-card__quote" data-i18n="testimonials.q2.quote">
+                                Trabajar con Jean es trabajar con un par, no con un proveedor. Nivel técnico, atención al detalle y capacidad para comunicar trade-offs claramente: nos ahorró incidentes y tiempo en producción.
+                            </blockquote>
+                            <figcaption class="testimonial-card__person">
+                                <div class="testimonial-card__avatar" aria-hidden="true">D</div>
+                                <div>
+                                    <strong data-i18n="testimonials.q2.name">Daniel Soto</strong>
+                                    <span data-i18n="testimonials.q2.role">CTO · TresAstronautas</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="testimonial-card">
+                            <i class="fas fa-quote-left testimonial-card__mark"></i>
+                            <blockquote class="testimonial-card__quote" data-i18n="testimonials.q3.quote">
+                                Jean fue uno de los estudiantes más rigurosos que tuve en la maestría. Combina pensamiento crítico, fundamentos sólidos y la disciplina, poco común, de llevar las ideas hasta implementación.
+                            </blockquote>
+                            <figcaption class="testimonial-card__person">
+                                <div class="testimonial-card__avatar" aria-hidden="true">L</div>
+                                <div>
+                                    <strong data-i18n="testimonials.q3.name">Ing. Luis Chamba</strong>
+                                    <span data-i18n="testimonials.q3.role">Director Maestría en Software · UNL</span>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+            <!-- testimonials close -->
+
+            <!-- process -->
+            <section id="section-process">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h5><span class="id-color" data-i18n="process.title">Proceso</span></h5>
+                            <h2 data-i18n="process.subtitle">Cómo trabajamos juntos</h2>
+                            <p class="process-lead" data-i18n="process.lead">Un flujo simple y transparente para ir de la idea al producto sin perder claridad en el camino.</p>
+                        </div>
+                    </div>
+
+                    <ol class="process-grid">
+                        <li class="process-step" data-step="01">
+                            <div class="process-step__icon"><i class="fas fa-search"></i></div>
+                            <h4 data-i18n="process.step1.title">Discovery call</h4>
+                            <p data-i18n="process.step1.description">30 min para entender tu idea, audiencia y objetivos. Sin costo, sin compromiso.</p>
+                            <span class="process-step__time" data-i18n="process.step1.time">~ Día 1</span>
+                        </li>
+                        <li class="process-step" data-step="02">
+                            <div class="process-step__icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                            <h4 data-i18n="process.step2.title">Propuesta y plan</h4>
+                            <p data-i18n="process.step2.description">Recibes alcance, timeline, hitos y costo en menos de 48 h. Si encajamos, firmamos y arrancamos.</p>
+                            <span class="process-step__time" data-i18n="process.step2.time">~ 24-48 h</span>
+                        </li>
+                        <li class="process-step" data-step="03">
+                            <div class="process-step__icon"><i class="fas fa-code"></i></div>
+                            <h4 data-i18n="process.step3.title">Sprints semanales</h4>
+                            <p data-i18n="process.step3.description">Demo todos los viernes. Tú validas, yo itero. Acceso al repo y al board desde el día uno.</p>
+                            <span class="process-step__time" data-i18n="process.step3.time">2 - 8 semanas</span>
+                        </li>
+                        <li class="process-step" data-step="04">
+                            <div class="process-step__icon"><i class="fas fa-rocket"></i></div>
+                            <h4 data-i18n="process.step4.title">Lanzamiento</h4>
+                            <p data-i18n="process.step4.description">Despliegue a stores o producción, handover técnico y soporte post-launch de 2 semanas.</p>
+                            <span class="process-step__time" data-i18n="process.step4.time">Día final + 2 sem.</span>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+            <!-- process close -->
+
+            <!-- stats -->
             <section id="section-fun-facts" class="pt60 pb60 text-light" data-bgcolor="#202020">
                 <div class="container">
 
@@ -545,46 +671,167 @@
             <!-- section close -->
 
 
+            <!-- section contact begin -->
+            <section id="section-contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h5><span class="id-color" data-i18n="contact.title">Ponte en Contacto</span></h5>
+                            <h2 data-i18n="contact.subtitle">Trabajemos Juntos</h2>
+                            <p class="contact-lead" data-i18n="contact.lead">Envíame un mensaje y lo recibiré directamente en mi WhatsApp.</p>
+                        </div>
+                    </div>
 
+                    <div class="row contact-row">
+                        <div class="col-md-7 col-md-offset-1">
+                            <form id="contact-form" class="contact-form" novalidate>
+                                <div class="intent-picker" role="group" aria-label="Tipo de proyecto">
+                                    <span class="intent-picker__label" data-i18n="contact.intent.label">¿Qué necesitas?</span>
+                                    <div class="intent-picker__chips">
+                                        <button type="button" class="intent-chip" data-intent="app">
+                                            <i class="fas fa-mobile-alt"></i><span data-i18n="contact.intent.app">App móvil</span>
+                                        </button>
+                                        <button type="button" class="intent-chip" data-intent="web">
+                                            <i class="fas fa-code"></i><span data-i18n="contact.intent.web">Web / dashboard</span>
+                                        </button>
+                                        <button type="button" class="intent-chip" data-intent="mvp">
+                                            <i class="fas fa-rocket"></i><span data-i18n="contact.intent.mvp">MVP / prototipo</span>
+                                        </button>
+                                        <button type="button" class="intent-chip" data-intent="consulting">
+                                            <i class="fas fa-comments"></i><span data-i18n="contact.intent.consulting">Consultoría</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-grid">
+                                    <div class="form-field">
+                                        <label for="contact-name" data-i18n="contact.form.name">Nombre</label>
+                                        <input type="text" id="contact-name" name="name" required
+                                            data-i18n-placeholder="contact.form.namePlaceholder"
+                                            placeholder="Tu nombre">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="contact-email" data-i18n="contact.form.email">Correo (opcional)</label>
+                                        <input type="email" id="contact-email" name="email"
+                                            data-i18n-placeholder="contact.form.emailPlaceholder"
+                                            placeholder="tu@correo.com">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="contact-subject" data-i18n="contact.form.subject">Asunto</label>
+                                        <input type="text" id="contact-subject" name="subject"
+                                            data-i18n-placeholder="contact.form.subjectPlaceholder"
+                                            placeholder="¿De qué quieres hablar?">
+                                    </div>
+                                    <div class="form-field">
+                                        <label for="contact-budget" data-i18n="contact.form.budget">Presupuesto estimado</label>
+                                        <select id="contact-budget" name="budget" class="form-select">
+                                            <option value="" data-i18n="contact.form.budgetPlaceholder">Selecciona un rango</option>
+                                            <option value="< $500" data-i18n="contact.form.budget1">Menos de $500</option>
+                                            <option value="$500 - $2k" data-i18n="contact.form.budget2">$500 – $2.000</option>
+                                            <option value="$2k - $10k" data-i18n="contact.form.budget3">$2.000 – $10.000</option>
+                                            <option value="$10k - $30k" data-i18n="contact.form.budget4">$10.000 – $30.000</option>
+                                            <option value="$30k+" data-i18n="contact.form.budget5">Más de $30.000</option>
+                                            <option value="A definir" data-i18n="contact.form.budget6">Aún no lo sé</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-field form-field--full">
+                                        <label for="contact-message" data-i18n="contact.form.message">Mensaje</label>
+                                        <textarea id="contact-message" name="message" rows="5" required
+                                            data-i18n-placeholder="contact.form.messagePlaceholder"
+                                            placeholder="Cuéntame sobre tu proyecto..."></textarea>
+                                    </div>
+                                </div>
 
-            <!-- section begin -->
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-whatsapp" id="contact-submit">
+                                        <i class="fab fa-whatsapp"></i>
+                                        <span data-i18n="contact.form.submit">Enviar por WhatsApp</span>
+                                    </button>
+                                    <p class="contact-disclaimer" data-i18n="contact.form.disclaimer">Se abrirá WhatsApp con tu mensaje listo para enviar.</p>
+                                </div>
+                            </form>
+                        </div>
 
-
-
-
+                        <div class="col-md-3 contact-info">
+                            <div class="contact-card">
+                                <i class="fab fa-whatsapp"></i>
+                                <h5 data-i18n="contact.info.whatsapp">WhatsApp</h5>
+                                <p>+593 97 860 0824</p>
+                            </div>
+                            <div class="contact-card">
+                                <i class="far fa-envelope"></i>
+                                <h5 data-i18n="contact.info.email">Email</h5>
+                                <p>jeanpaulmosquera1996@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- section contact close -->
 
         </div>
         <!-- content close -->
 
         <!-- footer begin -->
-        <footer>
-            <div class="container text-center text-light">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="social-icons big">
-                            <a href="twitter.com/JeanMosquera"><i class="fab fa-twitter fa-lg"></i></a>
-                            <a href="https://orcid.org/0000-0002-2215-4081"><i class="fab fa-orcid fa-lg"></i></a>
-                            <a href="https://www.researchgate.net/profile/Jean_Mosquera"><i
-                                    class="fab fa-researchgate fa-lg"></i></a>
-                            <a href="https://play.google.com/store/apps/developer?id=Jean+Paul+Mosquera+Arevalo"><i
-                                    class="fab fa-google-play fa-lg"></i></a>
-                            <a href="https://github.com/JeanM1996"><i class="fab fa-github fa-lg"></i></a>
-                        </div>
+        <footer class="site-footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-col--brand">
+                        <h4>Jean Mosquera</h4>
+                        <p data-i18n="footer.tagline">Construyo apps móviles, web y prototipos que las personas realmente usan.</p>
+                        <a class="footer-cta" href="#section-contact" data-i18n="footer.cta">
+                            <i class="fas fa-paper-plane"></i> Hablemos
+                        </a>
+                    </div>
+                    <div class="footer-col">
+                        <h5 data-i18n="footer.explore">Explora</h5>
+                        <ul>
+                            <li><a href="#section-about" data-i18n="nav.about">Acerca de mí</a></li>
+                            <li><a href="#section-services" data-i18n="nav.services">Servicios</a></li>
+                            <li><a href="#section-portfolio" data-i18n="nav.portfolio">Portafolio</a></li>
+                            <li><a href="#section-contact" data-i18n="nav.contact">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h5 data-i18n="footer.connect">Conecta</h5>
+                        <ul class="footer-socials">
+                            <li><a href="https://github.com/JeanM1996" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/jeanm1996" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://twitter.com/JeanMosquera" target="_blank" rel="noopener"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a href="https://orcid.org/0000-0002-2215-4081" target="_blank" rel="noopener"><i class="fab fa-orcid"></i> ORCID</a></li>
+                            <li><a href="https://www.researchgate.net/profile/Jean_Mosquera" target="_blank" rel="noopener"><i class="fab fa-researchgate"></i> ResearchGate</a></li>
+                            <li><a href="https://play.google.com/store/apps/developer?id=Jean+Paul+Mosquera+Arevalo" target="_blank" rel="noopener"><i class="fab fa-google-play"></i> Play Store</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col footer-col--trust">
+                        <h5 data-i18n="footer.workWithMe">Trabajemos</h5>
+                        <ul class="footer-trust">
+                            <li><i class="fas fa-bolt"></i> <span data-i18n="footer.trust.response">Respondo en menos de 24h</span></li>
+                            <li><i class="fas fa-calendar-check"></i> <span data-i18n="footer.trust.availability">Disponibilidad este mes</span></li>
+                            <li><i class="fas fa-phone-alt"></i> <span data-i18n="footer.trust.call">Llamada intro gratis · 30 min</span></li>
+                            <li><i class="fas fa-globe-americas"></i> <span data-i18n="footer.trust.location">Remoto · Loja, Ecuador</span></li>
+                        </ul>
+                        <a class="footer-cta footer-cta--small"
+                            href="https://wa.me/593978600824?text=Hola%20Jean%2C%20quisiera%20agendar%20una%20llamada%20de%2030%20minutos%20para%20conversar%20sobre%20mi%20proyecto"
+                            target="_blank" rel="noopener">
+                            <i class="fas fa-calendar-plus"></i> <span data-i18n="footer.trust.book">Agendar llamada</span>
+                        </a>
                     </div>
                 </div>
-            </div>
 
-            <div class="subfooter">
-                <div class="container text-center">
-                    <div class="row">
-                        <div class="col-md-12" data-i18n="footer.copyright">
-                            &copy; Copyright 2024 - Jean Paul Mosquera Arevalo
-                        </div>
-                    </div>
+                <div class="subfooter">
+                    <div class="subfooter__copy" data-i18n="footer.copyright">© 2026 Jean Paul Mosquera. Todos los derechos reservados.</div>
+                    <div class="subfooter__made" data-i18n="footer.madeWith">Diseñado y construido con ❤️ por Jean</div>
                 </div>
             </div>
         </footer>
         <!-- footer close -->
+
+        <!-- floating WhatsApp FAB -->
+        <a href="https://wa.me/593978600824?text=Hola%20Jean%2C%20vi%20tu%20portafolio%20y%20quisiera%20contactarte"
+           class="wa-fab" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span class="wa-fab__tooltip" data-i18n="footer.waTooltip">¡Hablemos por WhatsApp!</span>
+        </a>
 
         <a href="#" id="back-to-top"></a>
         <div id="preloader">
@@ -620,6 +867,13 @@
     <script src="js/typed-custom.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/i18n.js"></script>
+    <script src="js/progress-bars.js"></script>
+    <script src="js/contact-whatsapp.js"></script>
+    <script src="js/polish.js"></script>
+    <script src="js/portfolio-filter.js"></script>
+    <script src="js/wow-effects.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/extras.js"></script>
     <script src="js/app.js"></script>
     <script src="js/designesia.js"></script>
 
