@@ -83,10 +83,22 @@
         },
         
         updatePageContent() {
+            // Update document title first
+            const titleKey = 'nav.title';
+            const titleTranslation = this.t(titleKey);
+            if (titleTranslation !== titleKey) {
+                document.title = titleTranslation;
+            }
+            
             // Update all elements with data-i18n attribute
             document.querySelectorAll('[data-i18n]').forEach(element => {
                 const key = element.getAttribute('data-i18n');
                 const translation = this.t(key);
+                
+                // Skip title elements as they were handled above
+                if (element.tagName === 'TITLE') {
+                    return;
+                }
                 
                 // For elements with nested markup, update only text content
                 // This works because we only translate text nodes, not the HTML structure
