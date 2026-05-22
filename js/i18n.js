@@ -21,10 +21,13 @@
                 this.translations.en = await enResponse.json();
                 this.translations.es = await esResponse.json();
                 
-                // Set language from localStorage or default to Spanish
+                // Set language from localStorage or detect from browser
                 const savedLanguage = localStorage.getItem('language');
                 if (savedLanguage && (savedLanguage === 'en' || savedLanguage === 'es')) {
                     this.currentLanguage = savedLanguage;
+                } else {
+                    // Detect browser language
+                    this.currentLanguage = this.detectBrowserLanguage();
                 }
                 
                 // Update page content
@@ -41,6 +44,14 @@
             } catch (error) {
                 console.error('Error loading translations:', error);
             }
+        },
+        
+        detectBrowserLanguage() {
+            // Get browser language
+            const browserLang = (navigator.language || navigator.userLanguage).split('-')[0].toLowerCase();
+            
+            // Return 'es' if browser language is Spanish, otherwise default to 'en'
+            return browserLang === 'es' ? 'es' : 'en';
         },
         
         t(key, defaultValue = key) {
@@ -79,6 +90,7 @@
                 this.currentLanguage = lang;
                 localStorage.setItem('language', lang);
                 this.updatePageContent();
+                this.updateLanguageSwitcherUI();
                 document.dispatchEvent(new CustomEvent('languageChanged', {
                     detail: { language: lang }
                 }));
@@ -167,20 +179,41 @@
         },
         
         setupLanguageSwitcher() {
-            const langToggle = document.getElementById('lang-toggle');
-            const langText = document.getElementById('lang-text');
+            const langEsBtn = document.getElementById('lang-es');
+            const langEnBtn = document.getElementById('lang-en');
             
-            if (langToggle) {
-                // Set initial button text
-                langText.textContent = this.currentLanguage === 'es' ? 'EN' : 'ES';
+            if (langEsBtn && langEnBtn) {
+                // Update active state based on current language
+                this.updateLanguageSwitcherUI();
                 
-                langToggle.addEventListener('click', (e) => {
+                // Add click listeners to language buttons
+                langEsBtn.addEventListener('click', (e) => {
                     e.preventDefault();
-                    const newLang = this.currentLanguage === 'es' ? 'en' : 'es';
-                    this.setLanguage(newLang);
-                    // Update button text
-                    langText.textContent = newLang === 'es' ? 'EN' : 'ES';
+                    this.setLanguage('es');
                 });
+                
+                langEnBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.setLanguage('en');
+                });
+            }
+        },
+        
+        updateLanguageSwitcherUI() {
+            const langEsBtn = document.getElementById('lang-es');
+            const langEnBtn = document.getElementById('lang-en');
+            
+            if (langEsBtn && langEnBtn) {
+                // Remove active class from both buttons
+                langEsBtn.classList.remove('lang-btn-active');
+                langEnBtn.classList.remove('lang-btn-active');
+                
+                // Add active class to current language button
+                if (this.currentLanguage === 'es') {
+                    langEsBtn.classList.add('lang-btn-active');
+                } else {
+                    langEnBtn.classList.add('lang-btn-active');
+                }
             }
         }
     };

@@ -7674,24 +7674,53 @@ a, img {
 /* Language Switcher */
 .language-switcher {
     position: relative;
-}
-
-.language-switcher button {
-    display: inline-block;
-    padding: 8px 14px;
+    display: inline-flex;
+    gap: 0;
     background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    border-radius: 4px;
-    color: inherit;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    border-radius: 6px;
+    padding: 2px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.language-switcher button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.language-switcher .lang-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.language-switcher .lang-btn:first-child {
+    border-radius: 4px 0 0 4px;
+}
+
+.language-switcher .lang-btn:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.language-switcher .lang-btn:hover {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.language-switcher .lang-btn-active {
+    background: linear-gradient(135deg, rgba(230, 126, 34, 0.9) 0%, rgba(211, 84, 0, 0.9) 100%);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+}
+
+.language-switcher .lang-btn-active:hover {
+    background: linear-gradient(135deg, rgba(241, 142, 64, 0.95) 0%, rgba(220, 98, 0, 0.95) 100%);
+    color: #ffffff;
+    box-shadow: 0 6px 16px rgba(230, 126, 34, 0.4);
 }
 
 #lang-text {
