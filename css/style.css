@@ -7671,3 +7671,264 @@ a, img {
 		padding: 0;
 	}
 }
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+}
+
+.language-switcher a {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.language-switcher a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#lang-text {
+    display: inline-block;
+}
+
+/* Service Box */
+.service-box {
+    padding: 40px 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 48px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.service-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.service-box p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Portfolio Item */
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio-info {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-top: none;
+}
+
+.portfolio-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.portfolio-info p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Experience Item */
+.experience-item {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+    border-radius: 4px;
+}
+
+.experience-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.experience-item .company {
+    font-size: 16px;
+    color: #007bff;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.experience-item .period {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.experience-item .highlights {
+    list-style: none;
+    padding-left: 0;
+}
+
+.experience-item .highlights li {
+    padding-left: 25px;
+    margin-bottom: 10px;
+    position: relative;
+    color: #555;
+    line-height: 1.6;
+}
+
+.experience-item .highlights li:before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Skill Item */
+.skill-item {
+    margin-bottom: 25px;
+}
+
+.skill-item p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skill-level {
+    background-color: #007bff;
+    height: 100%;
+    transition: width 0.3s ease;
+}
+
+/* Education Item */
+.education-item {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.education-item h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.education-item p {
+    color: #666;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.education-item .award {
+    color: #007bff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Contact Item */
+.contact-item {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+.contact-item i {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.contact-item p {
+    color: #555;
+}
+
+.contact-item a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #0056b3;
+}
+
+/* Stat Counter */
+.stat-counter {
+    font-size: 48px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#section-stats {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+#section-stats .col-md-3 {
+    padding: 30px 20px;
+}
+
+#section-stats p {
+    color: #555;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .language-switcher {
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .service-box {
+        margin-bottom: 20px;
+    }
+    
+    .experience-item {
+        padding: 20px;
+    }
+    
+    .stat-counter {
+        font-size: 36px;
+    }
+}

@@ -1,0 +1,148 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de mí",
+    "services": "Servicios",
+    "portfolio": "Portafolio",
+    "language": "Idioma"
+  },
+  "hero": {
+    "greeting": "Hola, soy Jean Mosquera",
+    "titles": [
+      "Ingeniero de Software",
+      "Desarrollador Móvil",
+      "Líder Técnico",
+      "Innovador"
+    ],
+    "cta": "Contactarme"
+  },
+  "about": {
+    "title": "Acerca de mí",
+    "subtitle": "Bienvenido",
+    "intro": "Soy Ingeniero de Software y Desarrollador Móvil con más de cinco años de experiencia, especializado en el desarrollo de aplicaciones nativas Android y aplicaciones híbridas Flutter. Como líder técnico, me enfoco en liderar iniciativas de reingeniería arquitectónica, establecer estándares de arquitectura limpia e implementar procesos automatizados para optimizar el ciclo de desarrollo. Mi experiencia abarca gestión de proyectos, ciencia de datos y tecnología blockchain.",
+    "skills": {
+      "flutter": "Aplicaciones Flutter",
+      "android": "Android Nativo",
+      "architecture": "Arquitectura Limpia",
+      "cicd": "CI/CD y DevOps",
+      "dataScience": "Ciencia de Datos",
+      "blockchain": "Blockchain"
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Cómo puedo ayudarte",
+    "items": {
+      "mobileAndroid": {
+        "title": "Desarrollo Android Nativo",
+        "description": "Desarrollo experto de aplicaciones Android de alto rendimiento con patrones arquitectónicos modernos"
+      },
+      "flutter": {
+        "title": "Aplicaciones Multiplataforma con Flutter",
+        "description": "Crea hermosas y rápidas aplicaciones para iOS y Android desde una única base de código con Flutter"
+      },
+      "webApps": {
+        "title": "Desarrollo de Aplicaciones Web",
+        "description": "Construye aplicaciones web responsivas y dinámicas con marcos y tecnologías modernas"
+      },
+      "architecture": {
+        "title": "Arquitectura Limpia y Diseño",
+        "description": "Establece estándares arquitectónicos escalables y mejores prácticas para proyectos empresariales"
+      },
+      "cicd": {
+        "title": "Implementación de Pipelines CI/CD",
+        "description": "Automatiza tu ciclo de vida de desarrollo con herramientas y prácticas CI/CD modernas"
+      },
+      "consulting": {
+        "title": "Consultoría Técnica",
+        "description": "Orientación experta en estrategia tecnológica, arquitectura y transformación digital"
+      }
+    }
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "subtitle": "Proyectos destacados y publicaciones",
+    "filters": {
+      "all": "Todos",
+      "mobile": "Aplicaciones Móviles",
+      "web": "Aplicaciones Web",
+      "publications": "Publicaciones"
+    }
+  },
+  "experience": {
+    "title": "Experiencia Profesional",
+    "items": {
+      "tres": {
+        "position": "Desarrollador Senior/Líder Flutter",
+        "company": "Tres Astronautas",
+        "period": "Jul 2021 - Presente",
+        "highlights": [
+          "Líder del equipo Flutter supervisando el desarrollo integral de aplicaciones web y móviles",
+          "Entregué más de 40 proyectos de nivel empresarial para clientes como Rentandes y Finandina",
+          "Lideré la reingeniería del ciclo de vida de desarrollo móvil con Arquitectura Limpia y automatización CI/CD",
+          "Colaboré con stakeholders para transformar requisitos empresariales en características digitales intuitivas"
+        ]
+      },
+      "freelance": {
+        "position": "Desarrollador Android/Flutter",
+        "company": "Freelance",
+        "period": "2017 - 2021",
+        "highlights": [
+          "Desarrollo independiente de aplicaciones móviles propietarias publicadas en Google Play Store",
+          "Creé tres aplicaciones móviles exitosas con más de 5,000 descargas combinadas",
+          "Colaboré con el Grupo de Investigación de Software de UTPL en aplicaciones de recopilación de datos",
+          "Impulsé iniciativas de transformación digital para múltiples negocios"
+        ]
+      },
+      "utpl": {
+        "position": "Desarrollador Móvil & Técnico de Proyecto",
+        "company": "Universidad Técnica Particular de Loja (UTPL)",
+        "period": "Abr 2019 - Ago 2021",
+        "highlights": [
+          "Desarrollé y mantuve soluciones de software clave para la universidad",
+          "Lideré el desarrollo integral de la Aplicación Móvil de Cotización de Matrícula utilizada globalmente",
+          "Optimicé el rendimiento de la aplicación para dispositivos de gama baja",
+          "Depuré y resolví problemas complejos de compatibilidad entre versiones de Android"
+        ]
+      }
+    }
+  },
+  "education": {
+    "title": "Educación",
+    "items": {
+      "master": {
+        "degree": "Maestría en Ingeniería de Software",
+        "university": "Universidad Nacional de Loja",
+        "period": "Ago 2022 - Jun 2023"
+      },
+      "bachelor": {
+        "degree": "Licenciatura en Ingeniería de Sistemas y Computación",
+        "university": "Universidad Técnica Particular de Loja (UTPL)",
+        "period": "Abr 2021",
+        "award": "Premio al Mejor Estudiante (2020)"
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades Técnicas",
+    "core": "Competencias Principales",
+    "languages": "Lenguajes y Herramientas",
+    "spoken": "Idiomas Hablados"
+  },
+  "stats": {
+    "workHours": "Horas de Trabajo",
+    "projectsCompleted": "Proyectos Completados",
+    "satisfiedClients": "Clientes Satisfechos",
+    "awards": "Premios y Reconocimientos"
+  },
+  "contact": {
+    "title": "Ponte en Contacto",
+    "subtitle": "Trabajemos Juntos",
+    "phone": "+593 97 860 0824",
+    "email": "jeanpaulmosquera1996@gmail.com"
+  },
+  "footer": {
+    "copyright": "Copyright 2024 - Jean Paul Mosquera Arevalo",
+    "allRightsReserved": "Todos los derechos reservados"
+  }
+}
