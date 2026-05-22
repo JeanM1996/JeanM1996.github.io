@@ -88,13 +88,8 @@
                 const key = element.getAttribute('data-i18n');
                 const translation = this.t(key);
                 
-                // For title tags, use setAttribute
-                if (element.tagName === 'TITLE') {
-                    element.setAttribute('content', translation);
-                    element.textContent = translation;
-                } else {
-                    element.textContent = translation;
-                }
+                // Update element text content
+                element.textContent = translation;
             });
             
             // Update language switcher text
