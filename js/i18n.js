@@ -132,10 +132,38 @@
                 }
             });
             
+            // Update hero section typed strings
+            this.updateTypedStrings();
+            
             // Dispatch custom event
             document.dispatchEvent(new CustomEvent('translationsUpdated', {
                 detail: { language: this.currentLanguage }
             }));
+        },
+        
+        updateTypedStrings() {
+            // Update the typed strings element with translated roles
+            const typedStringsElement = document.getElementById('typed-strings');
+            if (typedStringsElement) {
+                const roles = this.getArray('heroSection.roles');
+                if (roles.length > 0) {
+                    typedStringsElement.innerHTML = roles.map(role => `<p>${role}</p>`).join('');
+                    
+                    // Reinitialize typed.js if it exists
+                    if (typeof Typed !== 'undefined') {
+                        // Check if there's an existing Typed instance and destroy it
+                        const typedElement = document.querySelector('.typed');
+                        if (typedElement && typedElement.data('typed')) {
+                            typedElement.data('typed').destroy();
+                        }
+                        
+                        // Reinitialize typed.js
+                        if (typeof newTyped === 'function') {
+                            newTyped();
+                        }
+                    }
+                }
+            }
         },
         
         setupLanguageSwitcher() {

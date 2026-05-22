@@ -106,7 +106,13 @@
     "title": "Technical Skills",
     "core": "Core Competencies",
     "languages": "Languages & Tools",
-    "spoken": "Spoken Languages"
+    "spoken": "Spoken Languages",
+    "android": "Native Android",
+    "dataScience": "Data Science",
+    "flutter": "Flutter Apps",
+    "webApps": "Web Apps",
+    "design": "Design",
+    "blockchain": "Blockchain and Other Technologies"
   },
   "stats": {
     "workHours": "Work Hours",
@@ -122,5 +128,14 @@
   },
   "footer": {
     "copyright": "© 2024 Jean Paul Mosquera. All rights reserved."
+  },
+  "heroSection": {
+    "greeting": "Hello, I'm Jean Mosquera",
+    "roles": [
+      "Software Engineer",
+      "Mobile Developer",
+      "Researcher",
+      "Innovator"
+    ]
   }
 }
