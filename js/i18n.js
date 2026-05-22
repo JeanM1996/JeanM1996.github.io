@@ -14,6 +14,10 @@
                     fetch('i18n/es.json')
                 ]);
                 
+                // Check for HTTP errors
+                if (!enResponse.ok) throw new Error(`Failed to load en.json: ${enResponse.statusText}`);
+                if (!esResponse.ok) throw new Error(`Failed to load es.json: ${esResponse.statusText}`);
+                
                 this.translations.en = await enResponse.json();
                 this.translations.es = await esResponse.json();
                 
@@ -44,13 +48,15 @@
             let value = this.translations[this.currentLanguage] || {};
             
             for (const k of keys) {
-                value = value[k];
-                if (value === undefined) {
+                // Check if value is an object before accessing properties
+                if (value && typeof value === 'object' && k in value) {
+                    value = value[k];
+                } else {
                     return defaultValue;
                 }
             }
             
-            return value;
+            return value !== undefined ? value : defaultValue;
         },
         
         getArray(key) {
@@ -58,8 +64,9 @@
             let value = this.translations[this.currentLanguage] || {};
             
             for (const k of keys) {
-                value = value[k];
-                if (value === undefined) {
+                if (value && typeof value === 'object' && k in value) {
+                    value = value[k];
+                } else {
                     return [];
                 }
             }
@@ -102,14 +109,14 @@
                 
                 // For elements with nested markup, update only text content
                 // This works because we only translate text nodes, not the HTML structure
-                let hasNesting = element.querySelector('*') !== null;
+                let hasChildElements = element.querySelector('*') !== null;
                 
-                if (hasNesting) {
+                if (hasChildElements) {
                     // For elements with children (like nav links with <span>), 
                     // replace only the direct text node
                     let found = false;
                     for (let i = 0; i < element.childNodes.length; i++) {
-                        if (element.childNodes[i].nodeType === 3) { // TEXT_NODE
+                        if (element.childNodes[i].nodeType === Node.TEXT_NODE) {
                             element.childNodes[i].textContent = translation;
                             found = true;
                             break;
@@ -124,12 +131,6 @@
                     element.textContent = translation;
                 }
             });
-            
-            // Update language switcher text
-            const langText = document.getElementById('lang-text');
-            if (langText) {
-                langText.textContent = this.currentLanguage.toUpperCase();
-            }
             
             // Dispatch custom event
             document.dispatchEvent(new CustomEvent('translationsUpdated', {

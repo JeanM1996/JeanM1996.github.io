@@ -7676,18 +7676,21 @@ a, img {
     position: relative;
 }
 
-.language-switcher a {
+.language-switcher button {
     display: inline-block;
     padding: 8px 14px;
     background-color: rgba(255, 255, 255, 0.1);
+    border: none;
     border-radius: 4px;
+    color: inherit;
+    cursor: pointer;
     transition: background-color 0.3s ease;
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 1px;
 }
 
-.language-switcher a:hover {
+.language-switcher button:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
